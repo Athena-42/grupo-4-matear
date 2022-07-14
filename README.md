@@ -1,6 +1,6 @@
-# grupo-4-gaucho-power
+# Grupo 4: Gaucho Power
 
-Gaucho Power
+
 
 Tienda online de mates y accesorios.
 

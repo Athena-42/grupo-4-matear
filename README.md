@@ -12,5 +12,5 @@ https://www.santacalma.com.ar/ : Este sitio fue elegido por dinamismo tanto func
 
 https://www.redbull.com/ar-es/ : Este sitio fue elegido por su header ya que es discreto pero al mismo tiempo su forma atraé al usuario y es visible.
 
-https://luccianos.net/ : Este sitio fue elegido por su carrucel  de imagenes que van cambiando a medida que el usuario navega por el footer en su menú principal.
+https://luccianos.net/ : Este sitio fue elegido por su carrusel  de imagenes que van cambiando a medida que el usuario navega por el footer en su menú principal.
 

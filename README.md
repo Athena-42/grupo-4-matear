@@ -1,5 +1,5 @@
 # Grupo 4: Gaucho Power
-Tienda online de mates,bolsos materos y accesorios.
+Tienda online de mates, bolsos materos y accesorios.
 
 Vendemos una amplia colección de mates personalizables, bolsos materos  y accesorios.
 

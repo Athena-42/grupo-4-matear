@@ -18,3 +18,5 @@ https://luccianos.net/ : Este sitio fue elegido por su carrusel  de imagenes que
 https://speedcubeshop.com : Este sitio fue elegido por su llamativa funcionalidad de anunciar anónimamente en la ezquina inferior izquierda lo que otra gente está comprando en tiempo real, de esa manera dandole al usuario una idea en tiempo real de cuáles son los productos más vendidos
 
 https://www.mercadolibre.com.ar : Por último, elegimos tomar inspiración del retailer online más grande de la argentina; particularmente en la comodidad del carrito, y la efectividad de sus sugerencias, que va mejorando mientras más cosas compra el usuario
+
+Link a nuestro tablero de trabajo: https://github.com/users/Athena-42/projects/2

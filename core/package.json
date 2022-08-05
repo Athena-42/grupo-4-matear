@@ -1,0 +1,22 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Athena-42/grupo-4-matear.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Athena-42/grupo-4-matear/issues"
+  },
+  "homepage": "https://github.com/Athena-42/grupo-4-matear#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

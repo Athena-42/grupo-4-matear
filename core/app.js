@@ -8,4 +8,8 @@ app.get('/home', (req,res)=>{
     res.sendFile(path.join(__dirname, '/views/home.html'))
 })
 
+app.get('/cart', (req,res)=>{
+    res.sendFile(path.join(__dirname, '/views/productCart.html'))
+})
+
 app.listen(3000, ()=> console.log("El servidor está corriendo en el puerto 3000"))

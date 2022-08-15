@@ -8,7 +8,6 @@ body{
 .Main{
     position: relative;
     top: 150px;
-    
 }
 
 
@@ -18,8 +17,6 @@ body{
     width: 55vw;
     height: 60vh;
     border:none;
-    
-    
 }
 
 .Form-Login{ 
@@ -31,7 +28,6 @@ body{
     border-color: black;
     border-radius: 20px;
     background-color: white;
-
 }
 
 .Form-Login-Campos .Datos-Input-Grupo input{
@@ -44,13 +40,6 @@ body{
     border-color: #666;
     border-radius: 5px;
 }
-
-.Form-Login-Campos .Botones-Form-Grupo {
-
-    border-color: blue;
-    margin: auto;
-}
-
 
 .Form-Login-Campos .Botones-Form-Grupo button{
     margin-top: 1.2%;
@@ -66,6 +55,7 @@ body{
     font-size: 1.5vw;
     text-align: center;
     box-sizing: border-box;
+    border-bottom: 2px solid #292214;
 } 
 
 

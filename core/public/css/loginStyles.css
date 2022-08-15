@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #8B7241, #453921);
+    position: relative;
+}
+
+.Main{
+    position: relative;
+    top: 150px;
+}
+
+
+.Main-Form-Login{
+    padding: 0px;
+    margin: auto;
+    width: 55vw;
+    height: 60vh;
+    border:none;
+}
+
+.Form-Login{ 
+    margin: auto;
+    padding: 0px;
+    width: 45vw;
+    height: 50vh;    
+    border: solid 2px;
+    border-color: black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.Form-Login-Campos .Datos-Input-Grupo input{
+    width: 15vw;
+    height: 3vh;
+    padding: 5px;
+    margin-top: 6%;
+    margin-left: 8%;
+    border:solid 2px;
+    border-color: #666;
+    border-radius: 5px;
+}
+
+.Form-Login-Campos .Botones-Form-Grupo button{
+    margin-top: 1.2%;
+    margin-left: 8%;  
+    width: 14vw;
+    height: 8vh;
+    border-radius:  8px;
+    border-color: #666;
+    background: linear-gradient(to bottom right, #C5E03E, #B3D161);
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: #202020;
+    font-size: 1.5vw;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 2px solid #292214;
+} 
+
+

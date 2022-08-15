@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
-body {
-    font-family: "roboto";
-    font-size: 12px;
-    background-color: burlywood;
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #8B7241, #453921);
+    position: relative;
 }
 
 .src {
@@ -22,10 +23,20 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.main-section{
+    text-align: center;
+    width: 90vw;
+    flex-wrap: wrap;
+}
 .articulos{
-    margin: 10px;
+    margin: 5px;
     background-color: white;
     display: block;
+}
+
+.imagenes {
+    width: 320px;
+    
 }
 
 .price{
@@ -67,7 +78,8 @@ body {
     }
     .icono-footer{
         font-size: 2em;
-        color: rgb(32, 116, 243);
+        color: gray
+        ;
         margin-bottom: 10px;
     }
    

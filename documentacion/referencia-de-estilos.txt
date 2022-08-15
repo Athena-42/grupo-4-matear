@@ -1,0 +1,9 @@
+Fuente/s: 
+Roboto ( <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> )
+
+Colores: 
+Marrón: #997E48
+Verde pera: #C5E03E
+Verde sobrio: #B3D161
+Verde marino oscuro: #93C48B
+(extraidos de https://coolors.co/b19359-d0e562-b6d369-93c48b tmb se puede usar este sitio para derivar sus sombras)

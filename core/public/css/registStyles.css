@@ -1,5 +1,5 @@
 header{display: flex; flex-direction: column;}
-
+html{background: linear-gradient(to right, #8B7241, #453921);}
 .barra1{display: flex; flex-direction: row; background-color: rgba(227,246,236,255);}
 
 .barra{padding-left:40vw; align-self: center; box-sizing: border-box; margin: 2vw; justify-self:flex-end}

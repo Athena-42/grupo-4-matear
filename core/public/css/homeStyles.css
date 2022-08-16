@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+html{background: linear-gradient(to right, #8B7241, #453921);}
 body{
     margin: 0;
     padding: 0;
@@ -26,7 +27,7 @@ header{display: flex; flex-direction: column;}
     align-self: center;
     background-color: rgb(122, 167, 181);
     margin: 0%;
-    height: 6vh;
+    height: 4vh;
     padding-top: 3vh;
 }
 

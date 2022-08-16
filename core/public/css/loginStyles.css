@@ -5,6 +5,30 @@ body{
     position: relative;
 }
 
+header{display: flex; flex-direction: column;}
+
+.barra1{display: flex; flex-direction: row; background-color: rgba(227,246,236,255);}
+
+.barra{padding-left:40vw; align-self: center; box-sizing: border-box; margin: 2vw; justify-self:flex-end}
+
+.src {
+    font-size: 24px;
+}
+
+
+.item-list-uno{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 1;
+    align-self: center;
+    background-color: rgb(122, 167, 181);
+    margin: 0%;
+    height: 6vh;
+    padding-top: 3vh;
+}
+
 .Main{
     position: relative;
     top: 150px;

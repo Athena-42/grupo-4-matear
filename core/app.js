@@ -12,6 +12,10 @@ app.get('/', (req,res)=>{
     res.sendFile(path.join(__dirname, '/views/home.html'))
 })
 
+app.get('/product-detail', (req,res)=>{
+    res.sendFile(path.join(__dirname, '/views/productDetail.html'))
+})
+
 app.get('/register', (req,res)=>{
     res.sendFile(path.join(__dirname, '/views/registro.html'))
 })

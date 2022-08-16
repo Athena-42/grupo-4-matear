@@ -1,8 +1,10 @@
 body{
     margin: 0;
     padding: 0;
+    height: 100vh;
     background: linear-gradient(to bottom right, #8B7241, #453921);
     position: relative;
+    
 }
 
 .Main{
@@ -45,11 +47,6 @@ body{
     border-radius: 5px;
 }
 
-.Form-Registro-Campos .Botones-Form-Grupo {
-
-    border-color: blue;
-    margin: auto;
-}
 
 
 .Form-Registro-Campos .Botones-Form-Grupo button{

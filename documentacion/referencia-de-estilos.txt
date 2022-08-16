@@ -7,3 +7,10 @@ Verde pera: #C5E03E
 Verde sobrio: #B3D161
 Verde marino oscuro: #93C48B
 (extraidos de https://coolors.co/b19359-d0e562-b6d369-93c48b tmb se puede usar este sitio para derivar sus sombras)
+
+
+*** Logo ***
+Fondo: rgba(227,246,236,255)
+Mate: rgba(71,76,89,255)
+Bombilla: rgb(122, 167, 181)
+Hierba: rgb(64, 191, 115)

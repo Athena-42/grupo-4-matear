@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/productCartStyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <%- include ('../partials/header') %>
+    <div class="Cart-Container">
+        <div class="Header">
+        <h3 class="Heading">Carrito de compras</h3>
+        <h5 class="Action">Remover todo</h5>
+        </div>
+
+        <div class="Cart-Items">
+            
+            <div class="Product">
+                <img class ="Image-Box" src="/images/mate-boca.webp" alt="mate boquita">
+                    <div class="about">
+                        <h1 class="title">Mate Boca Jrs.</h1>
+                        <h3 class="subtitle">600ml</h3>
+                    </div>
+                <div class="counter">
+                    <div class="btn">+</div>
+                    <div class="count">2</div>
+                    <div class="btn">-</div>
+                </div>
+                    <div class="prices">
+                    <div class="amount">$799.99</div>
+                    <div class="save"><u>Guardar</u></div>
+                    <div class="remove"><u>Remover</u></div>
+                </div>            
+            </div>
+
+            <div class="Product">
+                <img class ="Image-Box" src="/images/termo-generico.webp" alt="Termo acero inoxidable">
+                    <div class="about">
+                        <h1 class="title">Termo acero inoxidable</h1>
+                        <h3 class="subtitle">1L</h3>
+                    </div>
+                <div class="counter">
+                    <div class="btn">+</div>
+                    <div class="count">1</div>
+                    <div class="btn">-</div>
+                </div>
+                    <div class="prices">
+                    <div class="amount">$1999.99</div>
+                    <div class="save"><u>Guardar</u></div>
+                    <div class="remove"><u>Remover</u></div>
+                </div>
+            </div>
+            <!--Añadir más productos aquí-->
+
+
+    
+            <hr>
+            <div class="checkout">
+            <div class="total">
+            <div>
+            <div class="Subtotal">Sub-Total</div>
+            <div class="items">2 items</div>
+            </div>
+            <div class="total-amount">$2799.98</div>
+            </div>
+            <div class="buttons">
+                <button class="button">Volver</button>
+                <button class="button">Comprar</button>
+            
+            </div>   
+        </div>
+    </div>
+    
+</body>

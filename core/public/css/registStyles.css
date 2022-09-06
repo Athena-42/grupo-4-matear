@@ -1,13 +1,13 @@
 header{display: flex; flex-direction: column; width: 100vw;}
 html{background: linear-gradient(to right, #8B7241, #453921);}
-.barra1{
+.barra-registro1{
     width: 100vw;
     display: flex; 
     flex-direction: row;
     justify-content: space-between; 
     background-color: rgba(227,246,236,255);}
 
-.barra{
+.barra-registro2{
     align-self: center; 
     box-sizing: border-box; 
     margin: 2vw; 
@@ -16,14 +16,13 @@ html{background: linear-gradient(to right, #8B7241, #453921);}
 }
     
 
-.src {
+.src-registro {
     font-size: 24px;
     width: 100%;
     justify-self: flex-end;
 }
 
-.logo{align-self: center;}
-.item-list-uno{
+.item-list-uno-registro{
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +35,7 @@ html{background: linear-gradient(to right, #8B7241, #453921);}
     padding-top: 3vh;
 }
 
-body{
+body-registro{
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -44,7 +43,7 @@ body{
     
 }
 
-.Main{
+.Main-Registro{
     position: relative;
     top: 150px;
     
@@ -73,7 +72,7 @@ body{
 
 }
 
-.Form-Registro-Campos .Datos-Input-Grupo input{
+.Form-Registro-Campos .Datos-Input-Grupo-Registro input{
     width: 15vw;
     height: 3vh;
     padding: 5px;
@@ -86,7 +85,7 @@ body{
 
 
 
-.Form-Registro-Campos .Botones-Form-Grupo button{
+.Form-Registro-Campos .Botones-Form-Grupo-Registro button{
     margin-top: 1.2%;
     margin-left: 8%;  
     width: 14vw;

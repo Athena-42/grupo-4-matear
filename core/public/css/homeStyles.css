@@ -1,21 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 html{background: linear-gradient(to right, #8B7241, #453921);}
-body{
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom right, #8B7241, #453921);
-    position: relative;
-}
+
 header{display: flex; flex-direction: column; width: 100vw;}
-.barra1{
+.barraHome1{
     width: 100vw;
     display: flex; 
     flex-direction: row;
     justify-content: space-between; 
     background-color: rgba(227,246,236,255);}
 
-.barra{
+.barraHome2{
     align-self: center; 
     box-sizing: border-box; 
     margin: 2vw; 
@@ -24,14 +19,14 @@ header{display: flex; flex-direction: column; width: 100vw;}
 }
     
 
-.src {
+.srcHome {
     font-size: 24px;
     width: 100%;
     justify-self: flex-end;
 }
 
 .logo{align-self: center;}
-.item-list-uno{
+.item-list-uno-home{
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
@@ -44,41 +39,41 @@ header{display: flex; flex-direction: column; width: 100vw;}
     padding-top: 3vh;
 }
 
-.contenedor-articulos{
+.contenedor-articulos-home{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.main-section{
+.main-section-home{
     text-align: center;
     width: 90vw;
     flex-wrap: wrap;
 }
-.articulos{
+.articulos-home{
     margin: 5px;
     background-color: white;
     display: block;
 }
 
-.imagenes {
+.imagenes-home{
     width: 320px;
     
 }
 
-.price{
+.price-home{
     font-size: 18px;
     margin: 5px;
     text-align: left;
     display: block;
 }
-.discount{
+.discount-home{
     font-size: 16px;
     margin: 5px;
     text-align: left;
     color: green;
     display: block;
 }
-.description{
+.description-home{
     font-size: 16px;
     color: #666;
     text-align: left;
@@ -90,19 +85,19 @@ header{display: flex; flex-direction: column; width: 100vw;}
 
 /*Footer*/
 
-.contenedor-footer{
+.contenedor-footer-home{
     text-align: center;
     }
-    .h4-footer{
+    .h4-footer-home{
         font-size: 15px;
         margin-bottom: 1px;
         margin-top: 10px;
     }
-    .p-footer{
+    .p-footer-home{
         margin-top: 2px;
         margin-bottom: 25px;
     }
-    .icono-footer{
+    .icono-footer-home{
         font-size: 2em;
         color: gray
         ;

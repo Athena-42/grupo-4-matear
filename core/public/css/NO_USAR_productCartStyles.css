@@ -1,0 +1,228 @@
+header{display: flex; flex-direction: column; width: 100vw;}
+html{background: linear-gradient(to right, #8B7241, #453921);}
+.barra1{
+    width: 100vw;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    background-color: rgba(227,246,236,255);}
+
+.barra{
+    align-self: center; 
+    box-sizing: border-box; 
+    margin: 2vw; 
+    justify-self:flex-end;
+    
+}
+    
+
+.src {
+    font-size: 24px;
+    width: 100%;
+    justify-self: flex-end;
+}
+
+.logo{align-self: center;}
+.item-list-uno{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 1;
+    align-self: center;
+    background-color: rgb(122, 167, 181);
+    margin: 0%;
+    height: 6vh;
+    padding-top: 3vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .Cart-Container{
+    width: 70%;
+    height: 85%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #1687d933;
+   }
+   .Header{
+    margin: auto;
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .Heading{
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: #2F3841;
+   }
+   .Action{
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: #292214;
+    cursor: pointer;
+    border-bottom: 1px solid #292214;
+   }
+   .Cart-Items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;   
+}
+   
+   .Product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   }
+   .Image-Box{
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    max-height: 12vh;
+    max-width: 24vw;
+    margin: 1vw;
+   }
+   .about{
+    height: 100%;
+   }
+   
+   .title{
+    padding-top: 5px;
+    line-height: 10px;
+    font-size: 0.9rem;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    color: #202020;
+   }
+   .subtitle{
+    line-height: 10px;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: #909090;
+    text-align: end;
+   }
+
+   .counter{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .btn{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 900;
+    color: #202020;
+    cursor: pointer;
+   }
+   .count{
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 900;
+    color: #202020;
+   }
+
+   .prices{
+    height: 100%;
+    text-align: right;
+   }
+   .amount{
+    padding-top: 20px;
+    font-size: 26px;
+    font-family: 'Roboto';
+    font-weight: 800;
+    color: #202020;
+   }
+   .save{
+    padding-top: 5px;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: #93C48B;
+    cursor: pointer;
+   }
+   .remove{
+    padding-top: 5px;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: #292214;
+    cursor: pointer;
+   }
+
+   hr{
+    width: 66%;
+    float: right;
+    margin-right: 5%;
+   }
+   .checkout{
+    box-sizing: border-box;
+    margin: 5%;
+    width: auto;
+    justify-self: flex-end;
+   }
+   .total{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   }
+   .Subtotal{
+    font-size: 22px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: #202020;
+   }
+   .items{
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #909090;
+    line-height: 10px;
+   }
+   .total-amount{
+    font-size: 36px;
+    font-family: 'Roboto';
+    font-weight: 900;
+    color: #202020;
+   }
+   .button{
+    box-sizing: border-box;
+    margin: 5%;
+    margin-top: 5px;
+    width: 45%;
+    height: 40px;
+    border: none;
+    background: linear-gradient(to bottom right, #C5E03E, #B3D161);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: #202020;
+   }
+   .buttons{display: flex; justify-content: flex-end;}
+

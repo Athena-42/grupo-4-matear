@@ -189,7 +189,7 @@ header{display: flex; flex-direction: column;}
 
 }
 .description-prod-det{
-
+    width: auto;
 }
 .info-productos-prod-det{
     color: gray;
@@ -229,7 +229,7 @@ header{display: flex; flex-direction: column;}
 
 }
 .description-prod-det{
-
+    width: auto;
 }
 .info-productos-prod-det{
     color: gray;

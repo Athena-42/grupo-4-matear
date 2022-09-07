@@ -152,6 +152,13 @@ header{display: flex; flex-direction: column;}
 } 
 
 /*product add */
+.Cont_Gral_Form_newProduct{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
 
 .Cont_Form_newProduct {
     display: flex;
@@ -200,7 +207,14 @@ header{display: flex; flex-direction: column;}
     justify-content: space-around;
     align-items: flex-end;
 }
-
+.Img_Product{
+    width: 30vw;
+    height: 3vh;
+}
+.Cont_Input_File_Img{
+    width: 30vw;
+    height: 3vh;
+}
 .Form_newProduct input {
     border-radius: 0.4vw;
     border: 0.5px solid;

@@ -9,54 +9,54 @@
 
 <body>
     <%- include ('../partials/header') %>
-    
-    <div class="Cont_Form_newProduct">
-        
-        <div class ="Title_New_Product">
-            <h2 class="Tittle_New_Product_H">Añadir nuevo producto</h2>    
-        </div>
-
-        <form action =" " method ="" class = "Form_newProduct">
+    <div class ="Cont_Gral_Form_newProduct">
+        <div class="Cont_Form_newProduct">
             
-            <div class ="Img_Product">
-                <div class ="Cont_Icon_File_Img">
-                    <i class="fas fa-file-image"></i>
-                </div>
-                <div class ="Cont_Input_File_Img">
-                    <input type ="file" name = "imgProduct">
-                </div>
+            <div class ="Title_New_Product">
+                <h2 class="Tittle_New_Product_H">Añadir nuevo producto</h2>    
             </div>
 
-            <div class ="Nomb_Desc_Product">
-                <label> Nombre del producto
-                        <br>
-                        <input type ="text" name = "nomProduct" required>
-                </label>
-                <br>
-                <label> Descripción 
-                        <br>
-                        <input type ="text" name = "descProduct" >
-                </label>
-                <br>
+            <form action =" " method ="" class = "Form_newProduct">
                 
-                <label> Categoria
-                        <br>
-                        <input type ="text" name = "catProduct" required>
-                </label>
-                <br>
-                <label> Precio
-                        <br>
-                        <input type ="text" name = "precProduct" required>
-                </label>
-            </div>
-        </form>
-        <div class ="Cont_buttons_New_Product">
-            <div class ="Button_New_Product">
-                    <button type="submit" value="Agregar" class = "ButonAddProduct" name ="ButonAddProduct">Agregar</button>
-                    <button type="submit" value="Cancelar" class = "ButtonCancProduct" name="ButtonCancProduct">Cancelar</button>
+                <div class ="Img_Product">
+                    <div class ="Cont_Icon_File_Img">
+                        <i class="fas fa-file-image"></i>
+                    </div>
+                    <div class ="Cont_Input_File_Img">
+                        <input type ="file" name = "imgProduct">
+                    </div>
+                </div>
+
+                <div class ="Nomb_Desc_Product">
+                    <label> Nombre del producto
+                            <br>
+                            <input type ="text" name = "nomProduct" required>
+                    </label>
+                    <br>
+                    <label> Descripción 
+                            <br>
+                            <input type ="text" name = "descProduct" >
+                    </label>
+                    <br>
+                    
+                    <label> Categoria
+                            <br>
+                            <input type ="text" name = "catProduct" required>
+                    </label>
+                    <br>
+                    <label> Precio
+                            <br>
+                            <input type ="text" name = "precProduct" required>
+                    </label>
+                </div>
+            </form>
+            <div class ="Cont_buttons_New_Product">
+                <div class ="Button_New_Product">
+                        <button type="submit" value="Agregar" class = "ButonAddProduct" name ="ButonAddProduct">Agregar</button>
+                        <button type="submit" value="Cancelar" class = "ButtonCancProduct" name="ButtonCancProduct">Cancelar</button>
+                </div>
             </div>
         </div>
     </div>
-    
 </body>
 </html>

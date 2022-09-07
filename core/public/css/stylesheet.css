@@ -209,7 +209,7 @@ header{display: flex; flex-direction: column;}
 }
 .Img_Product{
     width: 30vw;
-    height: 3vh;
+    height: 20vh;
 }
 .Cont_Input_File_Img{
     width: 30vw;
@@ -609,7 +609,7 @@ header{display: flex; flex-direction: column;}
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 html{background: linear-gradient(to right, #8B7241, #453921);}
 
-header{display: flex; flex-direction: column; width: 100vw;}
+header{display: flex; flex-direction: column; width: 100%;}
 .barraHome1{
     width: 100vw;
     display: flex; 
@@ -691,7 +691,79 @@ header{display: flex; flex-direction: column; width: 100vw;}
 
 
 /*Footer*/
+.Cont_Gral_footer{
+    border-top: solid 2px rgba(71,76,89,255);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 2vw;
+}
+.Linea_Sup_PiePag{
+    size: 2vw;
+    color: red;
+    align-items: center;
+}
 
+.Cont_NcV{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Cont_NcV h4 {
+    color: rgb(64, 191, 115);
+}
+.Cont_Nav a{
+    color: white;
+    padding: 0.2vw;
+}
+.Cont_Nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.Cont_Con{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Cont_Con p{
+    color: white;
+    padding: 0vw;
+}
+
+.Cont_Vis{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Cont_Vis p{
+    color: white;
+    padding: 0vw;
+}
+
+.Cont_Linea_Sup{
+    display: flex;
+    align-items: center;
+}
+.Cont_PiePag{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.Cont_PiePag p{
+    color: white;
+    padding: 0vw;
+}
+.Cont_PiePag a{
+    color: white;
+    padding: 0vw;
+}
+/*
 .contenedor-footer-home{
     text-align: center;
     }
@@ -709,7 +781,7 @@ header{display: flex; flex-direction: column; width: 100vw;}
         color: gray
         ;
         margin-bottom: 10px;
-    }
+    }*/
    
     
     

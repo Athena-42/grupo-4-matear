@@ -7,7 +7,8 @@ const mainControllers = require('../controllers/mainControllers');
 
 router.get('/', mainControllers.index);
 router.get('/home', mainControllers.index);
-router.get('/product-detail', productoControllers.producDetalle);
+router.get('/productdetail', productoControllers.producDetalle);
+router.get('/productNew/:id', productoControllers.producNew);
 router.get('/register', mainControllers.registrar);
 router.get('/login', mainControllers.login);
 router.get('/cart', productoControllers.productCart);

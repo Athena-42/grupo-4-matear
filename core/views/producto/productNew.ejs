@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+
+<body>
+    <%- include ('../partials/header') %>
+    
+    <div class="Cont_Form_newProduct">
+        
+        <div class ="Title_New_Product">
+            <h2 class="Tittle_New_Product_H">Añadir nuevo producto</h2>    
+        </div>
+
+        <form action =" " method ="" class = "Form_newProduct">
+            
+            <div class ="Img_Product">
+                <div class ="Cont_Icon_File_Img">
+                    <i class="fas fa-file-image"></i>
+                </div>
+                <div class ="Cont_Input_File_Img">
+                    <input type ="file" name = "imgProduct">
+                </div>
+            </div>
+
+            <div class ="Nomb_Desc_Product">
+                <label> Nombre del producto
+                        <br>
+                        <input type ="text" name = "nomProduct" required>
+                </label>
+                <br>
+                <label> Descripción 
+                        <br>
+                        <input type ="text" name = "descProduct" >
+                </label>
+                <br>
+                
+                <label> Categoria
+                        <br>
+                        <input type ="text" name = "catProduct" required>
+                </label>
+                <br>
+                <label> Precio
+                        <br>
+                        <input type ="text" name = "precProduct" required>
+                </label>
+            </div>
+        </form>
+        <div class ="Cont_buttons_New_Product">
+            <div class ="Button_New_Product">
+                    <button type="submit" value="Agregar" class = "ButonAddProduct" name ="ButonAddProduct">Agregar</button>
+                    <button type="submit" value="Cancelar" class = "ButtonCancProduct" name="ButtonCancProduct">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

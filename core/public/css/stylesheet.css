@@ -88,30 +88,28 @@ Header{display: flex; flex-direction: column;}
     padding-top: 3vh;
 }
 
-.body-Registro{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    position: relative;
-    
-}
+/* ------------------------------- */
+/* ---------- REGISTER ---------- */
 
-.Main-Registro{
-    position: relative;
-    top: 150px;
-    
+
+.Register-Cont-Main{
+    width: 80%;
 }
 
 
-.Main-Form-Registro{
+.Register-Cont-Main-Form{
+    display: flex;
     padding: 0px;
-    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 20%;
     width: 55vw;
     height: 60vh;
     border:none; 
 }
 
-.Form-Registro{ 
+.Register-Cont-Form{ 
     margin: auto;
     padding: 0px;
     width: 45vw;
@@ -122,7 +120,7 @@ Header{display: flex; flex-direction: column;}
     background-color: white;
 }
 
-.Form-Registro-Campos .Datos-Input-Grupo-Registro input{
+.Register-Form-Campos .Datos-Input-Grupo-Registro input{
     width: 15vw;
     height: 3vh;
     padding: 5px;
@@ -135,7 +133,7 @@ Header{display: flex; flex-direction: column;}
 
 
 
-.Form-Registro-Campos .Botones-Form-Grupo-Registro button{
+.Register-Form-Campos .Botones-Form-Grupo button{
     margin-top: 1.2%;
     margin-left: 8%;  
     width: 14vw;
@@ -548,13 +546,7 @@ Header{display: flex; flex-direction: column;}
 
 
 /* ----------------------------- */
-/* ---------- HEADER ---------- */
-/*.Main-login{
-    position: relative;
-    top: 150px;
-}*/
-
-
+/* ---------- LOGIN ---------- */
 .Login-Main{
     margin-top: 5%;
     margin-bottom: 5%;

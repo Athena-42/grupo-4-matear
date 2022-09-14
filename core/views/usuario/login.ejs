@@ -11,12 +11,15 @@
 
     
 <body>
-    <%- include ('../partials/header') %>
-    <div class="Main">
-        <main class ="Main-Form-Login">
-            <div class ="Form-Login">
-                <form class ="Form-Login-Campos">
-                    <div class ="Datos-Input-Grupo-Login">
+    <div class = "Login-Header">
+        <%- include ('../partials/header') %>
+    </div>
+
+    <div class="Login-Main">
+        <main class ="Login-Main-Cont">
+            <div class ="Login-cont-Form">
+                <form class ="Login-Form">
+                    <div class ="Login-Cont-Campos-Datos">
                         <input type="email" class= "Form-Registro-Email" placeholder="Ingrese su correo electrónico">
                         <br>
                         <input type="password" class= "Form-Registro-Password" placeholder="Ingrese contraseña">
@@ -24,18 +27,17 @@
                     </div>
                     <br>
                     <br>
-                    <div class ="Botones-Form-Grupo-Login">
+                    <div class ="Login-Cont-Botonones">
                         <button type= "button" name="Crear-Cuenta" > Ingreso</button>
                     </div>
                 </form>
             </div>
         </main>
     </div>
-    <%- include ('../partials/footer') %>
+
+    <div class ="Login-Footer">
+        <%- include ('../partials/footer') %>
+    </div>
+    
 </body>
-
-
-
-
-
 </html>

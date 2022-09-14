@@ -1,41 +1,41 @@
-header{display: flex; flex-direction: column; width: 100vw;}
+Header{display: flex; flex-direction: column; width: 100vw;}
 html{background: linear-gradient(to right, #8B7241, #453921);}
 
-/*header*/
-.header-header{display: flex; flex-direction: column;}
-
-
-
-.item-list-header{
-    width: 100%;
+/* ----------------------------- */
+/* ---------- HEADER ---------- */
+.header-header{
+    display: flex; 
+    flex-direction: column;
 }
-header{display: flex; flex-direction: column; width: 100vw;}
+
+Header{display: flex; flex-direction: column; width: 100vw;}
 html{background: linear-gradient(to right, #8B7241, #453921);}
-.barra-1-header{
+.Header-Cont-Barra{
     width: 100vw;
     display: flex; 
     flex-direction: row;
     justify-content: space-between; 
     background-color: rgba(227,246,236,255);}
 
-.barra-2-header{
+.Header-Barra-Busqueda{
     align-self: center; 
     box-sizing: border-box; 
     margin: 2vw; 
     justify-self:flex-end;
-    
 }
     
 
-.searchbar-header {
+.Header-Searchbar-Input {
     font-size: 24px;
     width: 100%;
     justify-self: flex-end;
 }
 
-.item-list-header{
+.Header-Cont-List{
     width: 100vw;
+}
 
+.Header-List-Items{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -52,7 +52,7 @@ body{
     background: linear-gradient(to bottom right, #8B7241, #453921);
     position: relative;
 }
-header{display: flex; flex-direction: column;}
+Header{display: flex; flex-direction: column;}
 
 
 
@@ -546,15 +546,25 @@ header{display: flex; flex-direction: column;}
    }
    .buttons-cart{display: flex; justify-content: flex-end;}
 
-/*login*/
 
-.Main-login{
+/* ----------------------------- */
+/* ---------- HEADER ---------- */
+/*.Main-login{
     position: relative;
     top: 150px;
+}*/
+
+
+.Login-Main{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 20%;
+    width: 80%;
 }
 
-
-.Main-Form-Login{
+.Login-Main-Cont{
+    display: flex;
     padding: 0px;
     margin: auto;
     width: 55vw;
@@ -562,7 +572,7 @@ header{display: flex; flex-direction: column;}
     border:none;
 }
 
-.Form-Login{ 
+.Login-cont-Form{ 
     margin: auto;
     padding: 0px;
     width: 45vw;
@@ -573,7 +583,7 @@ header{display: flex; flex-direction: column;}
     background-color: white;
 }
 
-.Form-Login-Campos .Datos-Input-Grupo-Login input{
+.Login-Form .Login-Cont-Campos-Datos input{
     width: 15vw;
     height: 3vh;
     padding: 5px;
@@ -584,7 +594,7 @@ header{display: flex; flex-direction: column;}
     border-radius: 5px;
 }
 
-.Form-Login-Campos .Botones-Form-Grupo-Login button{
+.Login-Form .Login-Cont-Botonones button{
     margin-top: 1.2%;
     margin-left: 8%;  
     width: 14vw;
@@ -609,7 +619,7 @@ header{display: flex; flex-direction: column;}
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 html{background: linear-gradient(to right, #8B7241, #453921);}
 
-header{display: flex; flex-direction: column; width: 100%;}
+Header{display: flex; flex-direction: column; width: 100%;}
 .barraHome1{
     width: 100vw;
     display: flex; 

@@ -8,29 +8,38 @@
     <title>Detalle de Producto</title>
 </head>
 <body>
-    <%- include ('../partials/header') %>
-    
-    <div class="contenedor">
+    <div class ="Product-Detail-Body">
+        <div class ="Product-Detail-Header">
+            <%- include ('../partials/header') %>
+        </div>
+        
+        <div class="Product-Detail">
+            
+            <div class = "Product-Detail-Cont-Img">
+                <img class="Product-Detail-Img" src="\images\termo-generico.webp" alt="termo">
+            </div>
 
-    
-        <img class="imagenes" src="\images\termo-generico.webp" alt="termo">
-        <div class="detalle">
-            
-            <h2 class="titulo-detalle">Detalle del Producto</h2>
-            <h4 class="description">Termo TERMOLAR Dupla de acero inoxidable 1L </h4>
-        <p class="price">$5.000 </p>
-            <p class="discount">20$ OFF</p>
-            <ul class="info-productos">
-                <li>Bebidas con la temperatura ideal.</li>
-                <li>Conserva el agua fría y caliente hasta por 6 horas.</li>
-                <li>Capacidad de 1 litro.</li>
-                <li>Apertura con pico.</li>
-                <li>Pico multidireccional que lo hace más práctico y funcional.</li>
-            </ul>
-            
-</div>
-</div>
-<%- include ('../partials/footer') %>
+            <div class="Product-Detail-Cont-Detalle">
+                
+                <h2 class="titulo-detalle">Detalle del Producto</h2>
+                <h4 class="description">Termo TERMOLAR Dupla de acero inoxidable 1L </h4>
+                <p class="price">$5.000 </p>
+                <p class="discount">20$ OFF</p>
+                <ul class="info-productos">
+                    <li>Bebidas con la temperatura ideal.</li>
+                    <li>Conserva el agua fría y caliente hasta por 6 horas.</li>
+                    <li>Capacidad de 1 litro.</li>
+                    <li>Apertura con pico.</li>
+                    <li>Pico multidireccional que lo hace más práctico y funcional.</li>
+                </ul>      
+            </div>
+
+        </div>
+
+        <div class ="Product-Detail-Footer">
+            <%- include ('../partials/footer') %>
+        </div>
+    </div>
 </body>
 </html>
 

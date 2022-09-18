@@ -8,16 +8,15 @@
 </head>
 
 <body>
-
     <div class ="Header">
         <%- include ('../partials/header') %>
     </div>
-
-    <div class ="Cont_Gral_Form_newProduct">
-        <div class="Cont_Form_newProduct">
+    
+    <div class ="Cont_Gral_Form_editProduct">
+        <div class="Cont_Form_editProduct">
             
-            <div class ="Title_New_Product">
-                <h2 class="Tittle_New_Product_H">Añadir nuevo producto</h2>    
+            <div class ="Title_Edit_Product">
+                <h2 class="Tittle_Edit_Product_H">Editar</h2>    
             </div>
 
             <form action =" " method ="" class = "Form_newProduct">
@@ -51,12 +50,12 @@
                     </label>
                 </div>
             </form>
-            <div class ="Cont_buttons_New_Product">
+            <div class ="Cont_buttons_Edit_Product">
                 <div class ="Cont_Input_File_Img">
                     <input type ="file" name = "imgProduct" class ="Input_File_Img">
                 </div>
-                <div class ="Button_New_Product">
-                        <button type="submit" value="Agregar" class = "ButonAddProduct" name ="ButonAddProduct">Agregar</button>
+                <div class ="Button_Edit_Product">
+                        <button type="submit" value="Agregar" class = "ButonEditProduct" name ="ButonEditProduct">Guardar</button>
                         <button type="submit" value="Cancelar" class = "ButtonCancProduct" name="ButtonCancProduct">Cancelar</button>
                 </div>
             </div>
@@ -66,6 +65,6 @@
     <div class ="Footer">
         <%- include ('../partials/footer') %>
     </div>
-    
+
 </body>
 </html>

@@ -6,6 +6,9 @@ const  productoControllers = {
     producDetalle: (req,res)=>{
         res.render(path.resolve('./views/producto/productDetail'))
     },
+    producEdit: (req,res)=>{
+        res.render(path.resolve('./views/producto/productEdit'))
+    },
     productCart: (req,res)=>{
         res.render(path.resolve('./views/producto/productCart'))
     }

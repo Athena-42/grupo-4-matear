@@ -8,70 +8,79 @@
 </head>
 
 <body>
-    <%- include ('../partials/header') %>
-    <div class="Cart-Container">
-        <div class="Header-cart">
-        <h3 class="Heading-cart">Carrito de compras</h3>
-        <h5 class="Action-cart">Remover todo</h5>
-        </div>
-
-        <div class="Cart-Items">
-            
-            <div class="Product-cart">
-                <img class ="Image-Box-cart" src="/images/mate-boca.webp" alt="mate boquita">
-                    <div class="about-cart">
-                        <h1 class="title-cart">Mate Boca Jrs.</h1>
-                        <h3 class="subtitle-cart">600ml</h3>
-                    </div>
-                <div class="counter-cart">
-                    <div class="btn-cart">+</div>
-                    <div class="count-cart">2</div>
-                    <div class="btn-cart">-</div>
-                </div>
-                    <div class="prices-cart">
-                    <div class="amount-cart">$799.99</div>
-                    <div class="save-cart"><u>Guardar</u></div>
-                    <div class="remove-cart"><u>Remover</u></div>
-                </div>            
-            </div>
-
-            <div class="Product-cart">
-                <img class ="Image-Box-cart" src="/images/termo-generico.webp" alt="Termo acero inoxidable">
-                    <div class="about-cart">
-                        <h1 class="title-cart">Termo acero inoxidable</h1>
-                        <h3 class="subtitle-cart">1L</h3>
-                    </div>
-                <div class="counter-cart">
-                    <div class="btn-cart">+</div>
-                    <div class="count-cart">1</div>
-                    <div class="btn-cart">-</div>
-                </div>
-                    <div class="prices-cart">
-                    <div class="amount-cart">$1999.99</div>
-                    <div class="save-cart"><u>Guardar</u></div>
-                    <div class="remove-cart"><u>Remover</u></div>
-                </div>
-            </div>
-            <!--Añadir más productos aquí-->
-
-
     
-            <hr>
-            <div class="checkout-cart">
-            <div class="total-cart">
-            <div>
-            <div class="Subtotal-cart">Sub-Total</div>
-            <div class="items-cart">2 items</div>
+    <div class = "Header">
+        <%- include ('../partials/header') %>
+    </div>
+    <div class = "Cart_Cont_Gral">
+        <div class="Cart-Container">
+            <div class="Header-cart">
+            <h3 class="Heading-cart">Carrito de compras</h3>
+            <h5 class="Action-cart">Remover todo</h5>
             </div>
-            <div class="total-amount-cart">$2799.98</div>
-            </div>
-            <div class="buttons-cart">
-                <button class="button-cart">Volver</button>
-                <button class="button-cart">Comprar</button>
+
+            <div class="Cart-Items">
+                
+                    <div class="Product-cart">
+                        <img class ="Image-Box-cart" src="/images/mate-boca.webp" alt="mate boquita">
+                            <div class="about-cart">
+                                <h1 class="title-cart">Mate Boca Jrs.</h1>
+                                <h3 class="subtitle-cart">600ml</h3>
+                            </div>
+                        <div class="counter-cart">
+                            <div class="btn-cart">+</div>
+                            <div class="count-cart">2</div>
+                            <div class="btn-cart">-</div>
+                        </div>
+                            <div class="prices-cart">
+                            <div class="amount-cart">$799.99</div>
+                            <div class="save-cart"><u>Guardar</u></div>
+                            <div class="remove-cart"><u>Remover</u></div>
+                        </div>            
+                    </div>
+
+                    <div class="Product-cart">
+                        <img class ="Image-Box-cart" src="/images/termo-generico.webp" alt="Termo acero inoxidable">
+                            <div class="about-cart">
+                                <h1 class="title-cart">Termo acero inoxidable</h1>
+                                <h3 class="subtitle-cart">1L</h3>
+                            </div>
+                        <div class="counter-cart">
+                            <div class="btn-cart">+</div>
+                            <div class="count-cart">1</div>
+                            <div class="btn-cart">-</div>
+                        </div>
+                        <div class="prices-cart">
+                            <div class="amount-cart">$1999.99</div>
+                            <div class="save-cart"><u>Guardar</u></div>
+                            <div class="remove-cart"><u>Remover</u></div>
+                        </div>
+                    </div>
+                    <!--Añadir más productos aquí-->
+
+
             
-            </div>   
+                    <hr>
+                    <div class="checkout-cart">
+                    <div class="total-cart">
+                    <div>
+                    <div class="Subtotal-cart">Sub-Total</div>
+                    <div class="items-cart">2 items</div>
+                    </div>
+                    <div class="total-amount-cart">$2799.98</div>
+                    </div>
+                    <div class="buttons-cart">
+                        <button class="button-cart">Volver</button>
+                        <button class="button-cart">Comprar</button>
+                    
+                    </div>   
+                </div>
+            </div>
         </div>
     </div>
-    <%- include ('../partials/footer') %>
+
+    <div class ="Footer">
+        <%- include ('../partials/footer') %>
+    </div>
     
 </body>

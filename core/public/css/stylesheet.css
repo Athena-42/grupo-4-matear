@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
 Header{display: flex; flex-direction: column; width: 100vw;}
 html{background: linear-gradient(to right, #8B7241, #453921);}
 
@@ -264,10 +267,123 @@ Header{display: flex; flex-direction: column;}
     background-color: #d07684;
 }
 
+/* ---------------------------------- */
+/* ---------- PRODUCT EDIT ---------- */
+.Cont_Gral_Form_editProduct{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.Cont_Form_editProduct {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: solid 2px transparent;
+    border-radius: 15px;
+    background-color: white;
+    width: 80vw;
+    height: 50vh;
+    box-sizing: border-box;
+    padding: 15px;
+
+}
+
+.Title_Edit_Product{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 70vw;
+    height: 6vh;
+}
+.Tittle_Edit_Product_H{
+    color:#2F3841;
+    align-items: center;
+    
+}
+.Cont_Icon_File_Img{
+    width: 20vw;
+    height: 20vh;
+}
+
+.Cont_Icon_File_Img i{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12vw;
+    text-align: center;
+    color: #909090;
+}
+
+.Form_editProduct{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.Img_Product{
+    width: 30vw;
+    height: 20vh;
+}
+.Cont_Input_File_Img{
+    width: 30vw;
+    height: 3vh;
+}
+
+.Cont_Input_File_Img #Input_File_Img{
+    content: 'Aplicar';
+}
+
+.Form_editProduct input {
+    border-radius: 0.4vw;
+    border: 0.5px solid;
+    box-shadow: 2px 2px 2px #666;
+    width: 30vw;
+    height: 3vh;
+}
+
+.Button_Edit_Product{
+    width: 25vw;
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-content: flex-end;
+}
+
+.Button_Edit_Product button{
+    width: 10vw;
+    height: 5vh;
+    align-items: flex-end;
+    border-radius: 5px;
+    border: solid 0px;
+    box-shadow: -1px 1px 4px 2px #666;
+    color: white;
+}
+
+.Cont_buttons_Edit_Product{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
 
 
+.ButonEditProduct{
+    background-color: #3869a3;
+}
 
-/*product detail*/
+.ButtonCancProduct{
+    background-color: #d07684;
+}
+
+/* ---------------------------------- */
+/* ---------- PRODUCT DETAIL ---------- */
 .Product-Detail-Body{
     display: flex;
     flex-direction: column;
@@ -305,12 +421,18 @@ Header{display: flex; flex-direction: column;}
 
 
 
-/*product cart*/
-
-    
-
+/* ---------------------------------- */
+/* ---------- PRODUCT CART ---------- */
+.Cart_Cont_Gral{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 .src-cart{
-    font-size: 24px;
+    font-size: 1.5vw;
     width: 100%;
     justify-self: flex-end;
 }
@@ -566,10 +688,10 @@ Header{display: flex; flex-direction: column;}
 
 
 
-/*home styles*/
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+/* ---------------------------------- */
+/* ---------- USUARIO HOME ---------- */
+
 html{background: linear-gradient(to right, #8B7241, #453921);}
 
 Header{display: flex; flex-direction: column; width: 100%;}
@@ -609,41 +731,42 @@ Header{display: flex; flex-direction: column; width: 100%;}
     padding-top: 3vh;
 }
 
-.contenedor-articulos-home{
+.Home-Cont-Articulos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.main-section-home{
+
+.Home-Main{
     text-align: center;
     width: 90vw;
     flex-wrap: wrap;
 }
-.articulos-home{
+.Home-Articulo{
     margin: 5px;
     background-color: white;
     display: block;
 }
 
-.imagenes-home{
+.Home-Articulo-Imagenes{
     width: 320px;
     
 }
 
-.price-home{
+.Home-Articulo-Price{
     font-size: 18px;
     margin: 5px;
     text-align: left;
     display: block;
 }
-.discount-home{
+.Home-Articulo-Discount{
     font-size: 16px;
     margin: 5px;
     text-align: left;
     color: green;
     display: block;
 }
-.description-home{
+.Home-Articulo-Description{
     font-size: 16px;
     color: #666;
     text-align: left;

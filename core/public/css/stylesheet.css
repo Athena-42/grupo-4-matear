@@ -737,7 +737,16 @@ Header{display: flex; flex-direction: column; width: 100%;}
     justify-content: space-around;
 }
 
+.Home-Cont-Section-Articulos{
+    width: 80%;
+    height: 50%;
+    align-items: center;
+}
 .Home-Main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 90vw;
     flex-wrap: wrap;
@@ -746,13 +755,27 @@ Header{display: flex; flex-direction: column; width: 100%;}
     margin: 5px;
     background-color: white;
     display: block;
+    width: 25vw;
+    height: 25vw;
+
+}
+.Home-Cont-Articulo-Imagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
 }
 
 .Home-Articulo-Imagenes{
-    width: 320px;
-    
+    width: 12vw;
+    height: 12vw;
 }
 
+.Home-Cont-Articulo-texto{
+    size: 1vw;
+}
 .Home-Articulo-Price{
     font-size: 18px;
     margin: 5px;
@@ -785,8 +808,8 @@ Header{display: flex; flex-direction: column; width: 100%;}
     margin-top: 2vw;
 }
 .Linea_Sup_PiePag{
-    size: 2vw;
-    color: red;
+    width: 80%;
+    background-color: red;
     align-items: center;
 }
 

@@ -1,5 +1,5 @@
 const path = require('path')
-
+const {validationResult} = require('express-validator');
 
 const  productoControllers = {
     producNew: (req,res)=>{
@@ -16,7 +16,9 @@ const  productoControllers = {
     },
     productProcessImg: (req,res)=>{
         console.log(req.file);
-        res.send('Archivo subido correctamente');
+        const resultValidation = validationResult(req);
+        res.send(resultValidation);
+        //res.send('Archivo subido correctamente');
     }
 
 } 

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
 /* ----------------------------- */
@@ -52,6 +53,12 @@ body{
     margin: 0%;
     height: 6vh;
     padding-top: 3vh;
+}
+
+.Header-List-Items a {
+    font-family: 'Oswald';
+    color: yellow;
+    display: -moz-grid-line;
 }
 
 
@@ -728,13 +735,14 @@ Header{display: flex; flex-direction: column; width: 100%;}
 }
 
 .Home-Cont-Articulos{
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .Home-Cont-Section-Articulos{
-    width: 80%;
+    width: 90%;
     height: 50%;
     align-items: center;
 }
@@ -757,12 +765,22 @@ Header{display: flex; flex-direction: column; width: 100%;}
     flex-wrap: wrap;
 }
 .Home-Articulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
     margin: 5px;
     background-color: white;
     display: block;
     width: 25vw;
     height: 25vw;
+    border-radius: 10px;
+    box-shadow: 1.8px 1.8px  2px darkslategray;
+}
 
+.Home-Articulo:hover {
+    box-shadow: 1.8px 1.8px  2px darkslategray;
+    color: red;    
 }
 .Home-Cont-Articulo-Imagen{
     display: flex;
@@ -778,25 +796,37 @@ Header{display: flex; flex-direction: column; width: 100%;}
     height: 12vw;
 }
 
+.Home-Cont-Articulo-texto {
+    height: 50%;
+    width: 50%;
+    border: solid 1px red;
+}
 .Home-Cont-Articulo-texto p{
+    margin:0px;
+    padding: 0px;
     size: 0.3vw;
+   
 }
 .Home-Articulo-Price{
     font-size: 18px;
-    margin: 5px;
+    margin: 1px;
+    padding: 0px;
     text-align: left;
     display: block;
 }
 .Home-Articulo-Discount{
     font-size: 16px;
-    margin: 5px;
+    margin: 1px;
+    padding: 0px;
     text-align: left;
     color: green;
     display: block;
 }
 .Home-Articulo-Description{
     font-size: 16px;
-    color: #666;
+    margin:0px;
+    padding: 0px;
+    color: black;
     text-align: left;
     display: none;
     display: block;

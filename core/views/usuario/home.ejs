@@ -20,17 +20,28 @@
     <div class = "Home-Cont-Main">
         <main class="Home-Main">
             <div class = "Home-Cont-Section-Title">
-                <h3 class="Home-Section-Title">Ofertas</h3>
+                <h3 class="Home-Section-Title">Todos los productos</h3>
             </div>
             <div class ="Home-Cont-Section-Articulos">
                 <section class="Home-Cont-Articulos">
-
+                    <% for (let k = 0; k < products.length; k++) {%>
+                        <article class="Home-Articulo">
+                            <div class = "Home-Cont-Articulo-Imagen">
+                                <img class="Home-Articulo-Imagenes" src=<%= products[k].image %>  alt= <%= products[k].name %>>
+                            </div>
+                            <div class ="Home-Cont-Articulo-texto">
+                                <h4 class="Home-Articulo-Description"><%= products[k].name %></h4>
+                                <p class="Home-Articulo-Price"><%= products[k].price %></p>
+                            </div>
+                        </article>
+                    <% } %> 
+                    <!--
                     <article class="Home-Articulo">
                         <div class = "Home-Cont-Articulo-Imagen">
                             <img class="Home-Articulo-Imagenes" src="\images\termo-generico.webp" alt="termo">
                         </div>
                         <div class ="Home-Cont-Articulo-texto">
-                            <p class="Home-Articulo-Price">$5.000 </p>
+                            <p class="Home-Articulo-Price"></p>
                             <p class="Home-Articulo-Discount">20$ OFF</p>
                             <h4 class="Home-Articulo-Description">Termo clásico</h4>
                         </div>
@@ -75,6 +86,7 @@
                             <h4 class="Home-Articulo-Description">Mate Carpincho</h4>
                         </div>
                     </article>
+                    -->
                 </section>
             </div>
         </main>

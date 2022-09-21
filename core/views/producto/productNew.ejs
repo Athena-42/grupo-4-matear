@@ -20,7 +20,7 @@
                 <h2 class="Tittle_New_Product_H">Añadir nuevo producto</h2>    
             </div>
 
-            <form action =" " method ="" class = "Form_newProduct">
+            <form action ="/products/new" method ="POST" class = "Form_newProduct" enctype="multipart/form-data">
                 
                 <div class ="Img_Product">
                     <div class ="Cont_Icon_File_Img">
@@ -50,16 +50,16 @@
                             <input type ="text" name = "precProduct" required>
                     </label>
                 </div>
+                <div class ="Cont_buttons_New_Product">
+                    <div class ="Cont_Input_File_Img">
+                        <input type ="file" name = "imgProduct" class ="Input_File_Img">
+                    </div>
+                    <div class ="Button_New_Product">
+                            <button type="submit" value="Agregar" class = "ButonAddProduct" name ="ButonAddProduct">Agregar</button>
+                            <button type="submit" value="Cancelar" class = "ButtonCancProduct" name="ButtonCancProduct">Cancelar</button>
+                    </div>
+                </div>
             </form>
-            <div class ="Cont_buttons_New_Product">
-                <div class ="Cont_Input_File_Img">
-                    <input type ="file" name = "imgProduct" class ="Input_File_Img">
-                </div>
-                <div class ="Button_New_Product">
-                        <button type="submit" value="Agregar" class = "ButonAddProduct" name ="ButonAddProduct">Agregar</button>
-                        <button type="submit" value="Cancelar" class = "ButtonCancProduct" name="ButtonCancProduct">Cancelar</button>
-                </div>
-            </div>
         </div>
     </div>
 

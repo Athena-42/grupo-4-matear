@@ -129,7 +129,7 @@ body{
 }
 
 .Register-Form-Campos .Datos-Input-Grupo-Registro input{
-    width: 15vw;
+    width: 18vw;
     height: 3vh;
     padding: 5px;
     margin-top: 6%;
@@ -141,7 +141,9 @@ body{
 
 
 
-.Register-Form-Campos .Botones-Form-Grupo button{
+
+
+.Register-Form-Campos .Botones-Form-Grupo input{
     margin-top: 1.2%;
     margin-left: 8%;  
     width: 14vw;
@@ -918,6 +920,12 @@ Header{display: flex; flex-direction: column; width: 100%;}
     margin-right: 17.5vw;
 }
 
+
+.feedback{
+    color: purple;
+    font-size: 3px;
+    background-color: #2F3841;
+}
    
     
     

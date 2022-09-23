@@ -1,5 +1,6 @@
 const path = require('path')
-const {validationResult} = require('express-validator');
+//const {validationResult} = require('express-validator');
+//const { ValidatorsImpl } = require('express-validator/src/chain');
 
 const  productoControllers = {
     producNew: (req,res)=>{
@@ -15,10 +16,11 @@ const  productoControllers = {
         res.render(path.resolve('./views/producto/productCart'))
     },
     productProcessImg: (req,res)=>{
-        console.log(req.file);
-        const resultValidation = validationResult(req);
-        res.send(resultValidation);
-        //res.send('Archivo subido correctamente');
+        /*let errors =  validationResult(req);
+        //res.send(errores)
+        console.log(errors);        
+        res.render(path.resolve('./views/producto/productNew'), {errors: errors.mapped(),old: req.body});*/
+        
     }
 
 } 

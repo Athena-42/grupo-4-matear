@@ -19,19 +19,26 @@
     <div class ="Register-Cont-Main">
             <main class ="Register-Cont-Main-Form">
                 <div class ="Register-Cont-Form">
-                    <form class ="Register-Form-Campos">
+                    <form class ="Register-Form-Campos" action ="/register" method = "POST">
                         <div class ="Datos-Input-Grupo-Registro">
-                            <input type="email" class= "Form-Registro-Email" placeholder="Ingrese su correo electrónico">
-                            <br>
-                            <input type="password" class= "Form-Registro-Password" placeholder="Ingrese contraseña">
-                            <br>
-                            <input type="password" class= "Form-Registro-ConfirmPassword" placeholder="Confirme contraseña">
-                            <br>
+                            <div class ="Register-Cont-Input-Email">
+                                <input type="email" class= "Form-Registro-Email" name = "email" id= "name" placeholder="Ingrese su correo electrónico">
+                                <% if (locals && locals.mensajesDeError) {%>
+                                    <label><%= mensajesDeError[0].msg %></label>
+                                <%}%>
+                            </div>
+                            <div class ="Register-Cont-Input-Password">
+                                <input type="password" class= "Form-Registro-Password" name = "password" id= "password" placeholder="Ingrese contraseña">
+                            </div>
+                            <div class ="Register-Cont-Input-confPassword">
+                                <input type="password" class= "Form-Registro-ConfirmPassword" name = "confPassword" id= "confPassword" placeholder="Confirme contraseña">
+                            </div>
                         </div>
                         <br>
                         <br>
                         <div class ="Botones-Form-Grupo">
-                            <button type= "button" name="Crear-Cuenta" > Crear Cuenta</button>
+                            <!--<button type= "submit" name="Crear-Cuenta" onclick=""> Crear Cuenta</button>-->
+                            <input type="submit" name ="Crear-Cuenta">
                         </div>
                     </form>
                 </div>

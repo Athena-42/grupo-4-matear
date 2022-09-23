@@ -42,12 +42,15 @@
                     
                     <label> Categoria
                             <br>
-                            <input type ="text" name = "catProduct" required>
+                            <input type ="text" name = "catProduct" >
                     </label>
                     <br>
                     <label> Precio
                             <br>
-                            <input type ="text" name = "precProduct" required>
+                            <input type ="text" name = "precProduct" id ="precProduct"  >
+                            <% if (locals.errors && errors.precProduct) {%>
+                                <p class ="feedback"><%= errors.msg %></p>
+                            <%}%>
                     </label>
                 </div>
                 <div class ="Cont_buttons_New_Product">

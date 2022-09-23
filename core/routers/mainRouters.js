@@ -5,12 +5,9 @@ const mainControllers = require('../controllers/mainControllers');
 const multer = require ('multer');
 const path = require('path');
 const {body} = require('express-validator');
-const validator = [
-    body('nomProduct').notEmpty().withMessage('Valor ingresado incorrectamente'),
-    body('descProduct').notEmpty().withMessage('Valor ingresado incorrectamente'),
-    body('catProduct').notEmpty().withMessage('Valor ingresado incorrectamente'),
-    body('precProduct').notEmpty().withMessage('Valor ingresado incorrectamente'),
-]
+const validaciones = [
+    body('email').notEmpty().withMessage('Debe ingresar un valor.')
+];
 
 var storage = multer.diskStorage({
     destination: function (req,file,cb){
@@ -28,9 +25,11 @@ router.get('/', mainControllers.index);
 router.get('/home', mainControllers.index);
 router.get('/productdetail', productoControllers.producDetalle);
 router.get('/products/new', productoControllers.producNew);
-router.post('/products/new', upload.single('imgProduct'),validator,productoControllers.productProcessImg);
+router.post('/products/new', upload.single('imgProduct'),productoControllers.productProcessImg);
 router.get('/products/edit', productoControllers.producEdit);
 router.get('/register', mainControllers.registrar);
+router.post('/register', validaciones,mainControllers.insertarUsu);
+
 router.get('/login', mainControllers.login);
 router.get('/cart', productoControllers.productCart);
 router.get('/detail', productoControllers.producDetalle);

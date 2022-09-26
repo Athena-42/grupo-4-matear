@@ -676,7 +676,7 @@ body{
     border-radius: 5px;
 }
 
-.Login-Form .Login-Cont-Botonones button{
+.Login-Form .Login-Cont-Botonones input{
     margin-top: 1.2%;
     margin-left: 8%;  
     width: 14vw;

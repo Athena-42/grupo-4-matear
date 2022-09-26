@@ -4,9 +4,10 @@ const productoControllers = require('../controllers/productoControllers');
 const mainControllers = require('../controllers/mainControllers');
 const multer = require ('multer');
 const path = require('path');
-const {body} = require('express-validator');
+const {check} = require('express-validator');
 const validaciones = [
-    body('email').notEmpty().withMessage('Debe ingresar un valor.')
+    check('email').notEmpty().isEmail().withMessage('Ingese una dirección de correo válido'),
+    check('password').isLength({min: 6}).withMessage('Password inválida')
 ];
 
 var storage = multer.diskStorage({
@@ -31,6 +32,8 @@ router.get('/register', mainControllers.registrar);
 router.post('/register', validaciones,mainControllers.insertarUsu);
 
 router.get('/login', mainControllers.login);
+router.post('/login', validaciones,mainControllers.processLogin);
+
 router.get('/cart', productoControllers.productCart);
 router.get('/detail', productoControllers.producDetalle);
 /*router.get('/products/add', productoControllers.productAdd);*/

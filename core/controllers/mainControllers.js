@@ -3,7 +3,6 @@ const fs = require('fs');
 const products = fs.readFileSync('./data/productsDataBase.json');
 const users = fs.readFileSync(path.join(__dirname,'../data/userDataBase.json'));
 const bcrypt = require('bcryptjs')
-
 const {validationResult} = require('express-validator')
 const mainControllers = {
     index: (req,res)=>{
@@ -21,9 +20,11 @@ const mainControllers = {
         let errores = validationResult(req);
         //console.log (errores)
         let usuarios = JSON.parse(users)
+        console.log(errores)
         if (!errores.isEmpty()){
             res.render(path.resolve('./views/usuario/login'),{mensajesDeError: errores.array()})
-            console.log(errores)
+            console.log('Ingrese por acá')
+            
         }else{
             res.render(path.resolve('./views/usuario/login'))
             let usuExiste = usuarios.find(usuRegistrado => usuRegistrado.email == req.body.email)
@@ -35,20 +36,26 @@ const mainControllers = {
                     console.log('Success');
 
                 }else{
-                    let advertencia = {errors: [
-                        {
-                          value: '',
-                          msg: 'Credenciales invalidas',
-                          param: 'email',
-                          location: 'body'
-                        }]}
-
-                    console.log('Erroneo');
                     res.render(path.resolve('./views/usuario/login'));
                 }
             }else{
-                res.render(path.resolve('./views/usuario/login'));
-            }
+                //let advertencia = validationResult(req);
+                /*advertencia.errors.push( {credenciales: {
+                    value: '100',
+                    msg: 'Credenciales Invalidas',
+                    param: 'email',
+                    location: 'body'
+                  }});
+                  console.log(advertencia)*/
+
+                  let avisoCred = validationResult(req);
+                  avisoCred.errors.push( {
+                    value: '100',
+                    msg: 'Credenciales Invalidas',
+                    param: 'email',
+                    location: 'body'
+                  });
+                res.render(path.resolve('./views/usuario/login'),{avisoCred: avisoCred.array()})}
         }
         //res.send('Succes!');
         

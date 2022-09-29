@@ -20,22 +20,34 @@
             <div class ="Login-cont-Form">
                 <form class ="Login-Form" action ="/login" method ="POST">
                     <div class ="Login-Cont-Campos-Datos">
+                        
                         <% if (locals && locals.mensajesDeError) {%>
-                            <input type="email" class= "Form-Registro-Email" name="email" placeholder="Ingrese su correo electrónico"><label><%= mensajesDeError[1].msg %></label>
-                            <br>
-                            <input type="password" class= "Form-Registro-Password" name="password" placeholder="Ingrese contraseña"><label><%= mensajesDeError[2].msg %></label>
-                            <br>
+                            <%  if (mensajesDeError.length = 1 ) { %>
+                                <input type="email" class= "Form-Registro-Email" name="email" placeholder="Ingrese su correo electrónico"><span style="color: red;"><label><%= locals.mensajesDeError[1].msg %></label></span>
+                                <br>
+                                <input type="password" class= "Form-Registro-Password" name="password" placeholder="Ingrese contraseña">
+                                <br>
+                                <span style="color: red;"><label><%= locals.mensajesDeError[0].msg %></label></span>
+                            <% } else {%>  
+                                <input type="email" class= "Form-Registro-Email" name="email" placeholder="Ingrese su correo electrónico"><span style="color: red;"><label><%= locals.mensajesDeError[1].msg %></label></span>
+                                <br>
+                                <input type="password" class= "Form-Registro-Password" name="password" placeholder="Ingrese contraseña"><span style="color: red;"><label><%= locals.mensajesDeError[2].msg %></label></span>
+                                <br>
+                            <%}%>
                             
                         <%} else {%>
                             <input type="email" class= "Form-Registro-Email" name="email" placeholder="Ingrese su correo electrónico">
                             <br>
                             <input type="password" class= "Form-Registro-Password" name="password" placeholder="Ingrese contraseña">
                             <br>
-                        <%}%> 
+                            
+                        <%}%>                   
+                        
                     </div>
                     <br>
                     <br>
                     <div class ="Login-Cont-Botonones">
+                       
                         <input type="submit" name = "Crear-Cuenta">
                         <!--<button type= "button" name="Crear-Cuenta" > Ingreso</button>-->
                     </div>

@@ -6,7 +6,15 @@ const multer = require ('multer');
 const path = require('path');
 const {check} = require('express-validator');
 const validaciones = [
-    check('email').notEmpty().isEmail().withMessage('Ingese una dirección de correo válido'),
+    check('email').isEmail().withMessage('Ingese una dirección de correo válido')
+                  .custom( ({req})=> {
+                        let mail = req.query.value;
+                        if (mail == 'gonzalopelizza@hotmail.com'){
+                            throw new Error('Password confirmation does not match password');
+                        }
+                        return true
+                    }
+                  ).withMessage('Mail incorrecto'),
     check('password').isLength({min: 6}).withMessage('Password inválida')
 ];
 

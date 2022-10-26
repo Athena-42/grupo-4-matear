@@ -5,7 +5,9 @@
 /* ----------------------------- */
 /* ---------- BODY ---------- */
 body{
-    background-color: #909090;
+    background-image: url('/images/leather-brown-texture.jpg');
+   background-size: 1474px;
+    /*background-color: #5C4423;*/
     margin: 0px;
     padding: 0px;
 }
@@ -22,7 +24,8 @@ body{
     display: flex; 
     flex-direction: row;
     justify-content: space-between; 
-    background-color: rgba(227,246,236,255);
+    background-image: url('/images/cuero-negro.jpg');
+    background-size: 500px
 }
 
 .Header-Barra-Busqueda{
@@ -49,7 +52,7 @@ body{
     justify-content: space-around;
     flex-grow: 1;
     align-self: center;
-    background-color: rgb(122, 167, 181);
+    background-color:#C2904A;
     margin: 0%;
     height: 6vh;
     padding-top: 3vh;
@@ -57,7 +60,7 @@ body{
 
 .Header-List-Items a {
     font-family: 'Oswald';
-    color: yellow;
+    color:  #5C4423;
     display: -moz-grid-line;
 }
 

@@ -1,0 +1,9 @@
+Footer: cambiar colores, crear redes sociales y estetica
+
+header: achicar, cambiar colores, centrar logo, barra de busqueda(hacerla linda, ubicarla a la izquierda, logo), logos (carrito, mi cuenta y redes sociales) centrar los LI.
+
+home: Cambiar todo!! Como santa calma, carrousel y abajo categorias (Mates, bombillas, materas, termos, packs y ofertas)
+
+revisar detalle de producto, todo
+
+Revisar que se pueda utilizar para celular como para pc

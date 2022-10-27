@@ -51,9 +51,16 @@ a i{
 }
 /* ----------------------------- */
 /* ---------- HEADER ---------- */
-.header-header{
+.Header_Cont{
     display: flex; 
     flex-direction: column;
+    width: 100vw;
+    height: 15vw;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    background-image: url('/images/cuero-negro.jpg');
+    background-size: 500px
 }
 
 .iconos-header {
@@ -75,15 +82,7 @@ a i{
     color:#3b5998;
 }
 
-.Header-Cont-Barra{
-    width: 100vw;
-    height: 15vw;
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between; 
-    background-image: url('/images/cuero-negro.jpg');
-    background-size: 500px
-}
+
 
 .Header-Barra-Busqueda{
     align-self: center; 
@@ -107,22 +106,23 @@ a i{
 
 .Header-Cont-List{
     width: 100vw;
+    background-image: url('/images/cuero-negro.jpg');
+    background-size: 500px;
+    padding: 0;
+    margin: 0;
     
-    margin: 0%;
 }
 
 .Header-List-Items{
     place-content: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     flex-grow: 1;
-    align-self: center;
-    background-image: url('/images/cuero-negro.jpg');
-    background-size: 500px;
+    align-items: center;
     margin: 0%;
     height: 2vh;
-    padding: 4px 6px 4px;
+   
 
     /*padding-top: 3vh;*/
 }
@@ -131,8 +131,10 @@ a i{
    
     font-family: 'Oswald';
     color:  #fe0101;
-    display: -moz-grid-line;
+   
     text-decoration: none;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 .Header-List-Items a:hover {
     text-decoration: underline;

@@ -31,6 +31,13 @@ body{
     padding-top: 5px;
     padding-bottom: 10px;
 }
+.insta{
+    color: #E1306C;
+}
+.facebu{
+    color:#3b5998;
+}
+
 .Header-Cont-Barra{
     width: 100vw;
     height: 15vw;
@@ -46,13 +53,19 @@ body{
     box-sizing: border-box; 
     margin: 2vw; 
     justify-self:flex-end;
+    
 }
     
 
 .Header-Searchbar-Input {
+    background-color: #d1c9c9ef;
     font-size: 24px;
     width: 100%;
     justify-self: flex-end;
+    border-start-start-radius: 20px;
+    border-end-end-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .Header-Cont-List{
@@ -73,6 +86,7 @@ body{
     margin: 0%;
     height: 2vh;
     padding: 4px 6px 4px;
+
     /*padding-top: 3vh;*/
 }
 
@@ -81,8 +95,10 @@ body{
     font-family: 'Oswald';
     color:  #fe0101;
     display: -moz-grid-line;
-    margin: 0%;
-    
+    text-decoration: none;
+}
+.Header-List-Items a:hover {
+    text-decoration: underline;
 }
 
 

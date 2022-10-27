@@ -19,14 +19,23 @@ body{
     flex-direction: column;
 }
 
+.iconos-header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 3.5vw;
+}
+
 .Logo{
     display: contents;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 .Header-Cont-Barra{
     width: 100vw;
     height: 15vw;
     display: flex; 
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between; 
     background-image: url('/images/cuero-negro.jpg');
     background-size: 500px

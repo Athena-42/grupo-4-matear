@@ -19,10 +19,14 @@ body{
     flex-direction: column;
 }
 
+.Logo{
+    display: contents;
+}
 .Header-Cont-Barra{
     width: 100vw;
+    height: 15vw;
     display: flex; 
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between; 
     background-image: url('/images/cuero-negro.jpg');
     background-size: 500px
@@ -44,24 +48,32 @@ body{
 
 .Header-Cont-List{
     width: 100vw;
+    
+    margin: 0%;
 }
 
 .Header-List-Items{
+    place-content: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-grow: 1;
     align-self: center;
-    background-color:#C2904A;
+    background-image: url('/images/cuero-negro.jpg');
+    background-size: 500px;
     margin: 0%;
-    height: 6vh;
-    padding-top: 3vh;
+    height: 2vh;
+    padding: 4px 6px 4px;
+    /*padding-top: 3vh;*/
 }
 
 .Header-List-Items a {
+   
     font-family: 'Oswald';
-    color:  #5C4423;
+    color:  #fe0101;
     display: -moz-grid-line;
+    margin: 0%;
+    
 }
 
 

@@ -53,14 +53,20 @@ a i{
 /* ---------- HEADER ---------- */
 .Header_Cont{
     display: flex; 
-    flex-direction: column;
+    
     width: 100vw;
     height: 15vw;
     display: flex; 
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-around; 
     background-image: url('/images/cuero-negro.jpg');
-    background-size: 500px
+    background-size: 500px;
+    align-content: space-around;
+    
+    
+}
+.Header_Cont div{
+    
 }
 
 .iconos-header {
@@ -69,12 +75,6 @@ a i{
     flex-wrap: wrap;
     font-size: 3.5vw;
 }
-
-.Logo{
-    display: contents;
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
 .insta{
     color: #E1306C;
 }
@@ -82,13 +82,22 @@ a i{
     color:#3b5998;
 }
 
+.Logo{
+    display: contents;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin: 0%;
+}
+
 
 
 .Header-Barra-Busqueda{
     align-self: center; 
+    align-content: left;
     box-sizing: border-box; 
     margin: 2vw; 
     justify-self:flex-end;
+    padding: 0;
     
 }
     

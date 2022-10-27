@@ -841,7 +841,7 @@ Header{display: flex; flex-direction: column; width: 100%;}
 
 /*Footer*/
 .Cont_Gral_footer{
-    border-top: solid 2px rgba(71,76,89,255);
+    border-top: solid 2px white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -860,7 +860,8 @@ Header{display: flex; flex-direction: column; width: 100%;}
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: darkslategray;
+    background-image: url('/images/leather-brown-texture.jpg');
+    background-size: 1474px;
     padding-bottom: 15px;
 }
 .Cont_NcV h4 {
@@ -897,6 +898,15 @@ Header{display: flex; flex-direction: column; width: 100%;}
     color: white;
     padding: 0vw;
     margin: 1px
+}
+.Cont_Seg{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.Cont_Seg i{
+    margin: 5px;
+    font-size: 1.6vw;
 }
 
 .Cont_Linea_Sup{

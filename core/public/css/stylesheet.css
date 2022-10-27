@@ -6,12 +6,49 @@
 /* ---------- BODY ---------- */
 body{
     background-image: url('/images/leather-brown-texture.jpg');
-   background-size: 1474px;
+    background-size: 1474px;
     /*background-color: #5C4423;*/
     margin: 0px;
     padding: 0px;
 }
-
+/*CARROUSEL*/
+#cont_items_carrousel{
+    height: 200px;
+    overflow: hidden;
+}
+.itemCarrousel{
+    border: 1px solid black;
+    height: 100%;
+    position: relative;
+}
+#tarjeta_carrousel_1{
+    background-color: rgb(122, 167, 181);
+}
+#tarjeta_carrousel_2{
+    background-color: rgb(139, 181, 122);
+}
+#tarjeta_carrousel_3{
+    background-color: rgb(181, 122, 181);
+}
+.tarjeta_carrousel{
+    height: 100%;
+}
+.felchas_carrousel{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.felchas_carrousel a{
+    text-decoration: none;
+}
+a i{
+    color: white;
+}
 /* ----------------------------- */
 /* ---------- HEADER ---------- */
 .header-header{

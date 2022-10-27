@@ -15,6 +15,7 @@ body{
 #cont_items_carrousel{
     height: 200px;
     overflow: hidden;
+    
 }
 .itemCarrousel{
     border: 1px solid black;
@@ -37,7 +38,7 @@ body{
     position: absolute;
     top: 0;
     height: 100%;
-    width: 100%;
+    width: 97%;
     display: flex;
     align-items: center;
     justify-content: space-between;

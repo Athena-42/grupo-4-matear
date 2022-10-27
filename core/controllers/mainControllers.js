@@ -69,7 +69,9 @@ const mainControllers = {
             return res.render(path.resolve('./views/usuario/registro'),{mensajesDeError: errores.array()})
         }
         //res.render(path.resolve('./views/usuario/registro'))
-    }
+    },
+    //Sprint 6 Base de Datos
+    
 
 }
 

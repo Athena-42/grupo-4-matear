@@ -33,16 +33,7 @@ Sprint 4:
 tercer sprint.
 2 - ok
 3 - ok
-4 - Crear JSON de todos los productos.
-Una buena base para empezar sería:
-● Identificador (ya hablaremos más sobre este campo): id
-● Nombre del producto: name
-● Descripción: description
-● Imagen: image
-● Categoría: category
-● Colores (o cualquier otro campo
-Entregable: carpeta data con archivo products.json con los datos de productos
-generados. (https://mockaroo.com/.)
+4 - ok
 
 5 - deberán generar datos de usuarios. Una buena
 base para empezar sería:

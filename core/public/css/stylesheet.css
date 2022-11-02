@@ -69,15 +69,12 @@ a i{
 /* ---------- HEADER ---------- */
 .Header_Cont{
     display: flex; 
-    
     width: 100vw;
     height: 15vw;
-    display: flex; 
     flex-direction: row;
-    justify-content: space-around; 
+    justify-content: space-between; 
     background-image: url('/images/cuero-negro.jpg');
     background-size: 500px;
-    align-content: space-around;
     
     
 }
@@ -95,17 +92,17 @@ a i{
 }
 
 .Logo{
-    display: contents;
+    
     padding-top: 5px;
     padding-bottom: 10px;
-    margin: 0%;
+    margin: 0;
 }
 
 
 
 .Header-Barra-Busqueda{
     align-self: center; 
-    align-content: left;
+    width: 15vw;
     box-sizing: border-box; 
     margin: 2vw; 
     justify-self:flex-end;
@@ -822,7 +819,6 @@ Header{display: flex; flex-direction: column; width: 100%;}
     justify-self: flex-end;
 }
 
-.logo{align-self: center;}
 .item-list-uno-home{
     width: 100vw;
     display: flex;

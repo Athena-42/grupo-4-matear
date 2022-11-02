@@ -1,3 +1,4 @@
+Sprint 2:
 Footer: cambiar colores, crear redes sociales y estetica
 
 header: achicar, cambiar colores, centrar logo, barra de busqueda(hacerla linda, ubicarla a la izquierda, logo), logos (carrito, mi cuenta y redes sociales) centrar los LI.
@@ -7,3 +8,74 @@ home: Cambiar todo!! Como santa calma, carrousel y abajo categorias (Mates, bomb
 revisar detalle de producto, todo
 
 Revisar que se pueda utilizar para celular como para pc
+-----------------
+sprint 3:
+1 - actualizar el archivo retro.md con las principales conclusiones de la retro del
+segundo sprint.
+2 - ok
+3 - ok
+4 - ok
+5 - Dentro de users pondremos todas las vistas de usuarios
+que tengamos (por ejemplo: registro, login, ""perfil"", etc.). (Entregable: estructura actualizada de directorios y archivos de las vistas.)
+6 - ok 
+7 - cargar nuevos productos y editar los existentes. 
+● Nombre del producto (name)
+● Descripción (description)
+● Imagen (image)
+● Categoría (category)
+● Colores (o cualquier otro campo similar como: tamaños, talles, etc)
+● Precio (price)
+(Entregable: páginas de creación y edición de productos en formato .ejs junto con todos
+los recursos necesarios, estilos de CSS e imágenes.)
+--------------------
+Sprint 4:
+1 - actualizar el archivo retro.md con las principales conclusiones de la retro del
+tercer sprint.
+2 - ok
+3 - ok
+4 - Crear JSON de todos los productos.
+Una buena base para empezar sería:
+● Identificador (ya hablaremos más sobre este campo): id
+● Nombre del producto: name
+● Descripción: description
+● Imagen: image
+● Categoría: category
+● Colores (o cualquier otro campo
+Entregable: carpeta data con archivo products.json con los datos de productos
+generados. (https://mockaroo.com/.)
+
+5 - deberán generar datos de usuarios. Una buena
+base para empezar sería:
+● Identificador: id
+● Nombre: firstName
+● Apellido: lastName
+● Email: email
+● Contraseña: password
+● Categoría: category
+● Imagen: image
+Entregable: carpeta data con archivo users.json con los datos de usuarios generados.
+
+6 - CRUD
+Su tarea será la de implementar todos los métodos necesarios para poder trabajar con
+la fuente de datos JSON de productos que crearon en los puntos anteriores.
+Recuerden que para cumplir ese objetivo necesitarán de siete rutas:
+1. /products (GET)
+Listado de productos
+2. /products/create (GET)
+Formulario de creación de productos
+3. /products/:id (GET)
+Detalle de un producto particular
+4. /products (POST)
+Acción de creación (a donde se envía el formulario)
+5. /products/:id/edit (GET)
+Formulario de edición de productos
+6. /products/:id (PUT)
+Acción de edición (a donde se envía el formulario):
+7. /products/:id (DELETE)
+Acción de borrado
+Entregable: sección funcional con listado, detalle, alta, modificación y baja de productos.
+-------------
+
+
+
+

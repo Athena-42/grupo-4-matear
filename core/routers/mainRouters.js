@@ -31,6 +31,7 @@ var upload = multer({storage: storage});
 
 
 router.get('/', mainControllers.index);
+router.get('/allProducts', mainControllers.allProducts)
 router.get('/productdetail', productoControllers.producDetalle);
 router.get('/products/new', productoControllers.producNew);
 router.post('/products/new', upload.single('imgProduct'),productoControllers.productProcessImg);

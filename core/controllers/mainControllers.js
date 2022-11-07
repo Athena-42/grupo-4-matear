@@ -1,6 +1,7 @@
 const path = require('path');
 const fs = require('fs');
-const products = fs.readFileSync(path.join(__dirname,'../data/products.json'));
+const products = fs.readFileSync(path.join(__dirname,'../data/productsDataBase.json'));
+
 const users = fs.readFileSync(path.join(__dirname,'../data/userDataBase.json'));
 const bcrypt = require('bcryptjs')
 const {validationResult} = require('express-validator')
@@ -9,8 +10,8 @@ const mainControllers = {
         
         res.render('../views/usuario/home')
     },
-    allProducts: (req, res) =>{
-        
+    todosProducts: (req, res) =>{
+        res.render('../views/producto/allProducts', {products})
     },
     registrar: (req,res)=>{
         res.render(path.resolve('./views/usuario/registro'))

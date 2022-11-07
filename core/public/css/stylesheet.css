@@ -119,7 +119,7 @@ a i{
     
 
 .Header-Searchbar-Input {
-    background-color: #d1c9c9ef;
+    background-color: gainsboro;
     font-size: 24px;
     width: 100%;
     justify-self: flex-end;
@@ -155,7 +155,7 @@ a i{
 .Header-List-Items a {
    
     font-family: 'Oswald';
-    color:  #fe0101;
+    color:  gainsboro;
    
     text-decoration: none;
     margin-left: 2%;

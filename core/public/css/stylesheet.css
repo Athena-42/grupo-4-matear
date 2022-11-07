@@ -264,6 +264,28 @@ a i{
 } 
 
 /* ---------------------------------- */
+/* ---------- HOME ARTICULOS ---------- */
+
+.articulo-cont{
+    place-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 1;
+    align-items: center;
+    margin: 0%;
+}
+    
+.articulo-circulo{
+    
+    border-radius: 50%;
+    border: 1px solid gainsboro;
+    font-size: 120px;
+    text-decoration: none;
+}
+
+
+
 /* ---------- PRODUCT NEW ---------- */
 .Cont_Gral_Form_newProduct{
     display: flex;

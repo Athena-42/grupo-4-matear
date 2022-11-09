@@ -1,6 +1,6 @@
 
 
-/*const fs = require('fs')
+const fs = require('fs')
 
 const User = {
     fileName: './data/userDataBase.json',
@@ -41,7 +41,7 @@ const User = {
         }
         allusers.push(newUser);
         fs.writeFileSync(this.fileName, JSON.stringify(allusers, null, ' '));
-        return true;
+        return newUser;
     },
 
     delete: function(id) {
@@ -53,4 +53,4 @@ const User = {
 
 }
 
-module.exports = User*/
+module.exports = User

@@ -2,9 +2,6 @@ const path = require('path');
 const fs = require('fs');
 const products = fs.readFileSync(path.join(__dirname,'../data/productsDataBase.json'));
 const User = require('../models/User');
-
-
-
 const users = fs.readFileSync(path.join(__dirname,'../data/userDataBase.json'));
 const bcrypt = require('bcryptjs')
 const {validationResult} = require('express-validator')
@@ -17,7 +14,7 @@ const mainControllers = {
         res.render('../views/producto/allProducts', {products})
     },
     registrar: (req,res)=>{
-        users.create(req.body);
+        User.create(req.body);
         res.render(path.resolve('./views/usuario/registro'))
     },
     login: (req,res)=>{

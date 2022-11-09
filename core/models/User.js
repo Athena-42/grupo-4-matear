@@ -1,6 +1,6 @@
 
 
-/*const fs = require('fs')
+const fs = require('fs')
 
 const User = {
     fileName: './data/userDataBase.json',
@@ -53,4 +53,4 @@ const User = {
 
 }
 
-module.exports = User*/
+module.exports = User

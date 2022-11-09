@@ -17,8 +17,34 @@ const mainControllers = {
         res.render('../views/producto/allProducts', {products})
     },
     registrar: (req,res)=>{
-        users.create(req.body);
+        
         res.render(path.resolve('./views/usuario/registro'))
+    },
+    processRegister: (req, res) =>{
+        // const resultValidation = validationResult(req);
+
+        // if(resultValidation.errors.length > 0){
+        //     return res.render('usuario/registro', {
+        //         errors: resultValidation.mapped(),
+        //         oldData: req.body
+        //     })
+        // }
+        // let userInDB = User.findByField('email', req.body.email);
+        // if(userInDB){
+        //     return res.render('usuario/registro', {
+        //                 errors: {
+        //                     email: {
+        //                         msg: 'Este email ya está registrado'
+        //                     }
+        //                 },
+        //                 oldData: req.body
+        //             })
+        // }
+        let userToCreate = {
+            ...req.body,
+            password: bcrypt.hashSync(req.body.password, 10)
+        }
+        User.create(userToCreate)
     },
     login: (req,res)=>{
         res.render(path.resolve('./views/usuario/login'))
@@ -68,15 +94,15 @@ const mainControllers = {
         
         //res.render(path.resolve('./views/usuario/login'))
     },
-    insertarUsu: (req,res)=>{
-        let errores = validationResult(req);
-        //console.log(errores)
-        if (!errores.isEmpty()){
-            console.log('paso por acà')
-            return res.render(path.resolve('./views/usuario/registro'),{mensajesDeError: errores.array()})
-        }
-        //res.render(path.resolve('./views/usuario/registro'))
-    },
+    // insertarUsu: (req,res)=>{
+    //     let errores = validationResult(req);
+    //     //console.log(errores)
+    //     if (!errores.isEmpty()){
+    //         console.log('paso por acà')
+    //         return res.render(path.resolve('./views/usuario/registro'),{mensajesDeError: errores.array()})
+    //     }
+    //     //res.render(path.resolve('./views/usuario/registro'))
+    // },
     //Sprint 6 Base de Datos
     
 

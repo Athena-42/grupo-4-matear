@@ -1,22 +1,22 @@
 [
-    {
-        "id": 1,
-        "email": "mfarthing0@comcast.net",
-        "password": "$2a$10$NQQmC4/1.Rioxy5agDlvgeRSbVAwzwBp7rz3O6xcd4aD0ncgdqlLy"
-    },
-    {
-        "id": 2,
-        "email": "wfaucett1@jimdo.com",
-        "password": "YyZ8h47dM9"
-    },
-    {
-        "id": 3,
-        "email": "lallanagero@gmail.com",
-        "password": "gauchopower"
-    },
-    {
-        "id": 4,
-        "email": "felipecivalero@gmail.com",
-        "password": "gauchopower"
-    }
+ {
+  "id": 1,
+  "email": "mfarthing0@comcast.net",
+  "password": "$2a$10$NQQmC4/1.Rioxy5agDlvgeRSbVAwzwBp7rz3O6xcd4aD0ncgdqlLy"
+ },
+ {
+  "id": 2,
+  "email": "wfaucett1@jimdo.com",
+  "password": "YyZ8h47dM9"
+ },
+ {
+  "id": 3,
+  "email": "lallanagero@gmail.com",
+  "password": "gauchopower"
+ },
+ {
+  "id": 4,
+  "email": "felipecivalero@gmail.com",
+  "password": "gauchopower"
+ }
 ]

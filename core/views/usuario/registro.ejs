@@ -23,8 +23,8 @@
                         <div class ="Datos-Input-Grupo-Registro">
                             <div class ="Register-Cont-Input-Email">
                                 <input type="email" class= "Form-Registro-Email" name = "email" id= "name" placeholder="Ingrese su correo electrónico">
-                                <% if (locals && locals.mensajesDeError) {%>
-                                    <label><%= mensajesDeError[0].msg %></label>
+                                <% if (locals.errors && errors.email) {%>
+                                    <div><%= errors.email.msg %></div>
                                 <%}%>
                             </div>
                             <div class ="Register-Cont-Input-Password">

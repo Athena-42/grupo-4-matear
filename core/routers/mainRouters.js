@@ -5,18 +5,19 @@ const mainControllers = require('../controllers/mainControllers');
 const multer = require ('multer');
 const path = require('path');
 const {check} = require('express-validator');
-const validaciones = [
-    check('email').isEmail().withMessage('Ingese una dirección de correo válido')
-                  .custom( ({req})=> {
-                        let mail = req.query.value;
-                        if (mail == 'gonzalopelizza@hotmail.com'){
-                            throw new Error('Password confirmation does not match password');
-                        }
-                        return true
-                    }
-                  ).withMessage('Mail incorrecto'),
-    check('password').isLength({min: 6}).withMessage('Password inválida')
-];
+const validations = require('../middlewares/validateRegisterMiddleware')
+// const validaciones = [
+//     check('email').isEmail().withMessage('Ingese una dirección de correo válido')
+//                   .custom( ({req})=> {
+//                         let mail = req.query.value;
+//                         if (mail == 'gonzalopelizza@hotmail.com'){
+//                             throw new Error('Password confirmation does not match password');
+//                         }
+//                         return true
+//                     }
+//                   ).withMessage('Mail incorrecto'),
+//     check('password').isLength({min: 6}).withMessage('Password inválida')
+// ];
 
 var storage = multer.diskStorage({
     destination: function (req,file,cb){
@@ -27,7 +28,7 @@ var storage = multer.diskStorage({
     }
 }
 );
-var upload = multer({storage: storage});
+ var upload = multer({storage: storage});
 
 
 router.get('/', mainControllers.index);
@@ -37,10 +38,10 @@ router.get('/products/new', productoControllers.producNew);
 router.post('/products/new', upload.single('imgProduct'),productoControllers.productProcessImg);
 router.get('/products/edit', productoControllers.producEdit);
 router.get('/register', mainControllers.registrar);
-router.post('/register', validaciones,mainControllers.insertarUsu);
+router.post('/register',validations,mainControllers.processRegister);
 
 router.get('/login', mainControllers.login);
-router.post('/login', validaciones,mainControllers.processLogin);
+router.post('/login', validations,mainControllers.processLogin);
 
 router.get('/cart', productoControllers.productCart);
 router.get('/detail', productoControllers.producDetalle);

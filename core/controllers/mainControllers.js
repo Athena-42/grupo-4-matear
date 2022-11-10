@@ -14,14 +14,10 @@ const mainControllers = {
         res.render('../views/producto/allProducts', {products})
     },
     registrar: (req,res)=>{
-<<<<<<< HEAD
-        
-=======
-        User.create(req.body);
->>>>>>> e8528d36655d8d533f6d4a3eee5783e723a7eae2
         res.render(path.resolve('./views/usuario/registro'))
     },
     processRegister: (req, res) =>{
+        res.send('Estás viajando por post!')
         // const resultValidation = validationResult(req);
 
         // if(resultValidation.errors.length > 0){
@@ -41,11 +37,11 @@ const mainControllers = {
         //                 oldData: req.body
         //             })
         // }
-        let userToCreate = {
-            ...req.body,
-            password: bcrypt.hashSync(req.body.password, 10)
-        }
-        User.create(userToCreate)
+        // let userToCreate = {
+        //     ...req.body,
+        //     password: bcrypt.hashSync(req.body.password, 10)
+        // }
+        // User.create(userToCreate)
     },
     login: (req,res)=>{
         res.render(path.resolve('./views/usuario/login'))

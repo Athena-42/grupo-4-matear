@@ -24,7 +24,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 app.use(express.static('public'));
 app.set('view engine','ejs');
-app.use(router);
+app.use('/', router);
 app.use(cookieParser());
 
 app.use(session({secret: 'Nombre del Sitio',

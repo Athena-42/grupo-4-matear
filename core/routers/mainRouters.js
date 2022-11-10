@@ -37,11 +37,14 @@ router.get('/productdetail', productoControllers.producDetalle);
 router.get('/products/new', productoControllers.producNew);
 router.post('/products/new', upload.single('imgProduct'),productoControllers.productProcessImg);
 router.get('/products/edit', productoControllers.producEdit);
-router.get('/register', mainControllers.registrar);
-router.post('/register',validations,mainControllers.processRegister);
 
+//Registro
+router.get('/register', mainControllers.registrar);
+router.post('/register', mainControllers.processRegister);
+
+//Login
 router.get('/login', mainControllers.login);
-router.post('/login', validations,mainControllers.processLogin);
+router.post('/login',validations,mainControllers.processLogin);
 
 router.get('/cart', productoControllers.productCart);
 router.get('/detail', productoControllers.producDetalle);

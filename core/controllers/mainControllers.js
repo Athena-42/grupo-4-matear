@@ -17,7 +17,7 @@ const mainControllers = {
         res.render(path.resolve('./views/usuario/registro'))
     },
     processRegister: (req, res) =>{
-        res.send('Estás viajando por post!')
+        res.send(req.body);
         // const resultValidation = validationResult(req);
 
         // if(resultValidation.errors.length > 0){

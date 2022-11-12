@@ -19,12 +19,13 @@ const validations = require('../middlewares/validateRegisterMiddleware')
 //     check('password').isLength({min: 6}).withMessage('Password inválida')
 // ];
 
-var storage = multer.diskStorage({
-    destination: function (req,file,cb){
-        cb(null,'public/images/uploads')
+const storage = multer.diskStorage({
+    destination: function (req, file, cb){
+        cb(null,'../public/images/avatars')
     },
-    filename: function (req,file,cb){
-        cb(null,file.fieldname +'-'+Date.now()+ path.extname(file.originalname))
+    filename: function (req, file, cb){
+        let fileName = `${Date.now()}_img${path.extname(file.filename)}`;
+        cb(null,fileName);
     }
 }
 );

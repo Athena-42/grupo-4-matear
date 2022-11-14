@@ -17,6 +17,7 @@ const mainControllers = {
         res.render(path.resolve('./views/usuario/registro'))
     },
     processRegister: (req, res) =>{
+        res.send(req.body);
         // const resultValidation = validationResult(req);
 
         // if(resultValidation.errors.length > 0){
@@ -36,11 +37,11 @@ const mainControllers = {
         //                 oldData: req.body
         //             })
         // }
-        let userToCreate = {
-            ...req.body,
-            password: bcrypt.hashSync(req.body.password, 10)
-        }
-        User.create(userToCreate)
+        // let userToCreate = {
+        //     ...req.body,
+        //     password: bcrypt.hashSync(req.body.password, 10)
+        // }
+        // User.create(userToCreate)
     },
     login: (req,res)=>{
         res.render(path.resolve('./views/usuario/login'))

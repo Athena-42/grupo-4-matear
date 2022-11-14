@@ -19,12 +19,13 @@ const validations = require('../middlewares/validateRegisterMiddleware')
 //     check('password').isLength({min: 6}).withMessage('Password inválida')
 // ];
 
-var storage = multer.diskStorage({
-    destination: function (req,file,cb){
-        cb(null,'public/images/uploads')
+const storage = multer.diskStorage({
+    destination: function (req, file, cb){
+        cb(null,'../public/images/avatars')
     },
-    filename: function (req,file,cb){
-        cb(null,file.fieldname +'-'+Date.now()+ path.extname(file.originalname))
+    filename: function (req, file, cb){
+        let fileName = `${Date.now()}_img${path.extname(file.filename)}`;
+        cb(null,fileName);
     }
 }
 );
@@ -37,11 +38,14 @@ router.get('/productdetail', productoControllers.producDetalle);
 router.get('/products/new', productoControllers.producNew);
 router.post('/products/new', upload.single('imgProduct'),productoControllers.productProcessImg);
 router.get('/products/edit', productoControllers.producEdit);
-router.get('/register', mainControllers.registrar);
-router.post('/register',validations,mainControllers.processRegister);
 
+//Registro
+router.get('/register', mainControllers.registrar);
+router.post('/register', mainControllers.processRegister);
+
+//Login
 router.get('/login', mainControllers.login);
-router.post('/login', validations,mainControllers.processLogin);
+router.post('/login',validations,mainControllers.processLogin);
 
 router.get('/cart', productoControllers.productCart);
 router.get('/detail', productoControllers.producDetalle);

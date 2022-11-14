@@ -263,6 +263,15 @@ a i{
     box-sizing: border-box;
 } 
 
+.text-danger{
+    width: 18vw;
+    height: 3vh;
+    padding: 5px;
+    margin-top: 6%;
+    margin-left: 8%;
+    color: red;
+}
+
 /* ---------------------------------- */
 /* ---------- HOME ARTICULOS ---------- */
 

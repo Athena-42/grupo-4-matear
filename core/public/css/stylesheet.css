@@ -243,10 +243,6 @@ a i{
     border-radius: 5px;
 }
 
-
-
-
-
 .Register-Form-Campos .Botones-Form-Grupo button{
     margin-top: 1.2%;
     margin-left: 8%;  
@@ -267,7 +263,6 @@ a i{
     width: 18vw;
     height: 3vh;
     padding: 5px;
-    margin-top: 6%;
     margin-left: 8%;
     color: red;
 }

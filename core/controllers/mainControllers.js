@@ -17,16 +17,15 @@ const mainControllers = {
         res.render(path.resolve('./views/usuario/registro'))
     },
     processRegister: (req, res) =>{
+        
         const resultValidation = validationResult(req);
-        return res.send(resultValidation)
-        // const resultValidation = validationResult(req);
 
-        // if(resultValidation.errors.length > 0){
-        //     return res.render('usuario/registro', {
-        //         errors: resultValidation.mapped(),
-        //         oldData: req.body
-        //     })
-        // }
+        if(resultValidation.errors.length > 0){
+            return res.render('usuario/registro', {
+                errors: resultValidation.mapped(),
+                oldData: req.body
+            })
+        }
         // let userInDB = User.findByField('email', req.body.email);
         // if(userInDB){
         //     return res.render('usuario/registro', {

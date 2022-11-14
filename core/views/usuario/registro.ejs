@@ -21,19 +21,36 @@
                 <div class ="Register-Cont-Form">
                     <form class ="Register-Form-Campos" method = "POST" action ="/register">
                         <div class ="Datos-Input-Grupo-Registro">
-                            <div class ="Register-Cont-Input-Email">
-                                <input type="text" class="Form-Registro-Password" name="name" id="name" placeholder="Ingrese su nombre">
-                                <div class="text-danger">ERROR</div>
-                                <input type="email" class= "Form-Registro-Email" name = "email" id= "email" placeholder="Ingrese su correo electrónico">
-                                <% if (locals.resultValidation && resultValidation.email) {%>
-                                    <p><%= resultValidation.email.msg %></p>
-                                <%}%>
+                            
+                                <input type="text" class="Form-Registro-Password" name="name" id="name" placeholder="Ingrese su nombre" value="<%= locals.oldData ? oldData.name : null %>">
+                                <% if (locals.errors && errors.name) { %>
+                                    <div class="text-danger">
+                                     <%= errors.name.msg %> 
+                                    </div>
+                                <% } %>
+                                <div class ="Register-Cont-Input-Email">
+                                <input type="email" class= "Form-Registro-Email" name = "email" id= "email" placeholder="Ingrese su correo electrónico" value="<%= locals.oldData ? oldData.email : null %>">
+                                <% if (locals.errors && errors.email) { %>
+                                    <div class="text-danger">
+                                     <%= errors.email.msg %> 
+                                    </div>
+                                <% } %>
                             </div>
                             <div class ="Register-Cont-Input-Password">
                                 <input type="password" class= "Form-Registro-Password" name = "password" id= "password" placeholder="Ingrese contraseña">
+                                <% if (locals.errors && errors.password) { %>
+                                    <div class="text-danger">
+                                     <%= errors.password.msg %> 
+                                    </div>
+                                <% } %>
                             </div>
                             <div class ="Register-Cont-Input-confPassword">
                                 <input type="password" class= "Form-Registro-ConfirmPassword" name = "confPassword" id= "confPassword" placeholder="Confirme contraseña">
+                                <% if (locals.errors && errors.confPassword) { %>
+                                    <div class="text-danger">
+                                     <%= errors.confPassword.msg %> 
+                                    </div>
+                                <% } %>
                             </div>
                         </div>
                         <div class ="Botones-Form-Grupo">

@@ -21,5 +21,12 @@
  },
  {
   "id": 5
+ },
+ {
+  "id": 6,
+  "email": "lallanagero@gmail.com",
+  "password": "$2a$10$E63YmO8tS7ACkH1mnGM6T.nfwpCDFW1wKpi0r.tQhf0eG6eyPMbs.",
+  "confPassword": "1234",
+  "Crear-Cuenta": "Submit"
  }
 ]

@@ -14,11 +14,6 @@ const mainControllers = {
         res.render('../views/producto/allProducts', {products})
     },
     registrar: (req,res)=>{
-<<<<<<< HEAD
-        
-=======
-        User.create(req.body);
->>>>>>> e8528d36655d8d533f6d4a3eee5783e723a7eae2
         res.render(path.resolve('./views/usuario/registro'))
     },
     processRegister: (req, res) =>{

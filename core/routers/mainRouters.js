@@ -4,7 +4,7 @@ const productoControllers = require('../controllers/productoControllers');
 const mainControllers = require('../controllers/mainControllers');
 const multer = require ('multer');
 const path = require('path');
-const {check} = require('express-validator');
+const {body} = require('express-validator');
 const validations = require('../middlewares/validateRegisterMiddleware')
 // const validaciones = [
 //     check('email').isEmail().withMessage('Ingese una dirección de correo válido')
@@ -21,15 +21,15 @@ const validations = require('../middlewares/validateRegisterMiddleware')
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb){
-        cb(null,'../public/images/avatars')
+        cb(null,'./public/images/avatars')
     },
     filename: function (req, file, cb){
-        let fileName = `${Date.now()}_img${path.extname(file.filename)}`;
+        let fileName = `${Date.now()}_img${path.extname(file.originalname)}`;
         cb(null,fileName);
     }
 }
 );
- var upload = multer({storage: storage});
+ const upload = multer({storage: storage});
 
 
 router.get('/', mainControllers.index);
@@ -41,7 +41,7 @@ router.get('/products/edit', productoControllers.producEdit);
 
 //Registro
 router.get('/register', mainControllers.registrar);
-router.post('/register', mainControllers.processRegister);
+router.post('/register',validations, mainControllers.processRegister);
 
 //Login
 router.get('/login', mainControllers.login);

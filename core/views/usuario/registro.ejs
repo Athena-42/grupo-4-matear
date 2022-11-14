@@ -19,10 +19,12 @@
     <div class ="Register-Cont-Main">
             <main class ="Register-Cont-Main-Form">
                 <div class ="Register-Cont-Form">
-                    <form class ="Register-Form-Campos" method = "POST" action ="/register" enctype="multipart/form-data">
+                    <form class ="Register-Form-Campos" method = "POST" action ="/register">
                         <div class ="Datos-Input-Grupo-Registro">
                             <div class ="Register-Cont-Input-Email">
-                                <input type="email" class= "Form-Registro-Email" name = "email" id= "name" placeholder="Ingrese su correo electrónico">
+                                <input type="text" class="Form-Registro-Password" name="name" id="name" placeholder="Ingrese su nombre">
+                                <div class="text-danger">ERROR</div>
+                                <input type="email" class= "Form-Registro-Email" name = "email" id= "email" placeholder="Ingrese su correo electrónico">
                                 <% if (locals.resultValidation && resultValidation.email) {%>
                                     <p><%= resultValidation.email.msg %></p>
                                 <%}%>
@@ -35,7 +37,7 @@
                             </div>
                         </div>
                         <div class ="Botones-Form-Grupo">
-                            <button type= "submit" name="Crear-Cuenta"> Crear Cuenta</button>
+                            <button type= "submit" > Crear Cuenta</button>
                             
                         </div>
                     </form>

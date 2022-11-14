@@ -17,7 +17,8 @@ const mainControllers = {
         res.render(path.resolve('./views/usuario/registro'))
     },
     processRegister: (req, res) =>{
-        res.send(req.body);
+        const resultValidation = validationResult(req);
+        return res.send(resultValidation)
         // const resultValidation = validationResult(req);
 
         // if(resultValidation.errors.length > 0){

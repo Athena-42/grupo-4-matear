@@ -22,7 +22,7 @@ module.exports = function(sequelize, DataTypes) {
 
         },
         description: {
-            type: DataTypes.STRING
+            type: DataTypes.STRINGg
         },
         price: {
             type: DataTypes.INTEGER

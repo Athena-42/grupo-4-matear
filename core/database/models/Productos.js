@@ -5,7 +5,7 @@ module.exports = function(sequelize, DataTypes) {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: false
+            autoIncrement: true
         },
         name: {
             type: DataTypes.STRING
@@ -20,6 +20,9 @@ module.exports = function(sequelize, DataTypes) {
         },
         price: {
             type: DataTypes.INTEGER
+        },
+        felipeon: {
+            type: DataTypes.INTEGER
         }
         
     }
@@ -30,6 +33,10 @@ module.exports = function(sequelize, DataTypes) {
     }
 
     let Productos = sequelize.define(alias, cols, config)
+
+    Productos.associate = function(models) {
+        Productos
+    }
 
     return Productos
 }

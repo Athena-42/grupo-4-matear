@@ -7,25 +7,15 @@ module.exports = function(sequelize, DataTypes) {
             primaryKey: true,
             autoIncrement: true
         },
-        name: {
+        color: {
             type: DataTypes.STRING
 
-        },
-        categories: {
-            type: DataTypes.STRING
-
-        },
-        description: {
-            type: DataTypes.STRING
-        },
-        price: {
-            type: DataTypes.INTEGER
         }
         
     }
 
     let config = {
-        tableName: 'products',
+        tableName: 'productos',
         timestamps: false
     }
 

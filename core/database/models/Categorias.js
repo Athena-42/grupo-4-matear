@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    let alias = 'Productos'
+    let alias = 'Categorias'
 
     let cols = {
         id: {
@@ -7,25 +7,14 @@ module.exports = function(sequelize, DataTypes) {
             primaryKey: true,
             autoIncrement: true
         },
-        name: {
+        categorie: {
             type: DataTypes.STRING
 
-        },
-        categories: {
-            type: DataTypes.STRING
-
-        },
-        description: {
-            type: DataTypes.STRING
-        },
-        price: {
-            type: DataTypes.INTEGER
         }
-        
     }
 
     let config = {
-        tableName: 'products',
+        tableName: 'categories',
         timestamps: false
     }
 

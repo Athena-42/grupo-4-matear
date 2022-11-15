@@ -31,4 +31,4 @@ app.use(session({secret: 'Nombre del Sitio',
 resave: false,
 saveUninitialized: true}))
 
-app.listen(3001, ()=> console.log("El servidor está corriendo en el puerto 3001"));
+app.listen(3000, ()=> console.log("El servidor está corriendo en el puerto 3000"));

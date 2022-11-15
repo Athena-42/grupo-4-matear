@@ -15,7 +15,7 @@ const mainControllers = {
         let productosJSON = fs.readFileSync('./data/productsDataBase.json', {encoding: 'utf-8'});
         let productos = JSON.parse(productosJSON)
 
-        res.render('../views/producto/productDetail', {'productos': productos})
+        res.render('../views/producto/allProducts', {'productos': productos})
     },
     registrar: (req,res)=>{
         res.render(path.resolve('./views/usuario/registro'))

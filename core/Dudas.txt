@@ -1,0 +1,8 @@
+1 logo de react en pestania
+2 tener dos node modules y packege
+3 
+
+-------------------------
+
+clase 21(En vivo)
+material extra: uso de git(mergin, push, pill, etc.)

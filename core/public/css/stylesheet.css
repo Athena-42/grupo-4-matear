@@ -288,6 +288,17 @@ a i{
     text-decoration: none;
 }
 
+/* ---------- ARTICULOS PRODUCTOS ---------- */
+
+.cont-articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: gainsboro;
+    margin: 10px;
+    width: 20%;
+}
+
 
 
 /* ---------- PRODUCT NEW ---------- */

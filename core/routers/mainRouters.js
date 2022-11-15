@@ -5,7 +5,8 @@ const mainControllers = require('../controllers/mainControllers');
 const multer = require ('multer');
 const path = require('path');
 const {body} = require('express-validator');
-const validations = require('../middlewares/validateRegisterMiddleware')
+const validations = require('../middlewares/validateRegisterMiddleware');
+
 // const validaciones = [
 //     check('email').isEmail().withMessage('Ingese una dirección de correo válido')
 //                   .custom( ({req})=> {
@@ -34,7 +35,7 @@ const storage = multer.diskStorage({
 
 router.get('/', mainControllers.index);
 router.get('/products', mainControllers.todosProducts)
-router.get('/productdetail', productoControllers.producDetalle);
+router.get('/productdetail/:id', productoControllers.producDetalle);
 router.get('/products/new', productoControllers.producNew);
 router.post('/products/new', upload.single('imgProduct'),productoControllers.productProcessImg);
 router.get('/products/edit', productoControllers.producEdit);

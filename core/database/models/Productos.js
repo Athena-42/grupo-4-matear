@@ -5,6 +5,12 @@ module.exports = function(sequelize, DataTypes) {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
+
+
+
+
+
+
             autoIncrement: true
         },
         name: {
@@ -19,6 +25,9 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING
         },
         price: {
+            type: DataTypes.INTEGER
+        },
+        felipeon: {
             type: DataTypes.INTEGER
         }
         

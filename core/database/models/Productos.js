@@ -1,4 +1,4 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
     let alias = 'Productos'
 
     let cols = {
@@ -9,7 +9,6 @@ module.exports = function(sequelize, DataTypes) {
         },
         name: {
             type: DataTypes.STRING
-
         },
         description: {
             type: DataTypes.STRING
@@ -22,32 +21,26 @@ module.exports = function(sequelize, DataTypes) {
         },
         categorie_id: {
             type: DataTypes.INTEGER
-
         },
         color_id: {
             type: DataTypes.INTEGER
         }
-        
     }
-
     let config = {
         tableName: 'products',
         timestamps: false
     }
-
     let Productos = sequelize.define(alias, cols, config)
 
-    Productos.associate = function(models) {
-        Productos.hasMany(models.Categorias, {
-            as: "categoria",
-            foreignkey: "categorie_id"
-        });
-        Productos.hasMany(models.Color, {
-            as: "color",
-            foreignkey: "color_id"
-        });
-
+    Productos.associate = function (models){
+        Productos.belongsTo(models.Categorias, {
+            as: 'categoria',
+            foreignKey: 'categorie_id'
+        })
+        Productos.belongsTo(models.Color, {
+            as: 'color',
+            foreignKey: 'color_id'
+        })
     }
-
-    return Productos
+    return Productos;
 }

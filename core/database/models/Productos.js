@@ -11,17 +11,20 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING
 
         },
-        categories: {
-            type: DataTypes.STRING
-
-        },
         description: {
             type: DataTypes.STRING
         },
         price: {
             type: DataTypes.INTEGER
         },
-        felipeon: {
+        oferta: {
+            type: DataTypes.INTEGER
+        },
+        categorie_id: {
+            type: DataTypes.INTEGER
+
+        },
+        color_id: {
             type: DataTypes.INTEGER
         }
         
@@ -35,7 +38,15 @@ module.exports = function(sequelize, DataTypes) {
     let Productos = sequelize.define(alias, cols, config)
 
     Productos.associate = function(models) {
-        Productos
+        Productos.hasMany(models.Categorias, {
+            as: "categoria",
+            foreignkey: "categorie_id"
+        });
+        Productos.hasMany(models.Color, {
+            as: "color",
+            foreignkey: "color_id"
+        });
+
     }
 
     return Productos

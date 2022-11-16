@@ -6,9 +6,16 @@ const users = fs.readFileSync(path.join(__dirname,'../data/userDataBase.json'));
 const bcrypt = require('bcryptjs')
 const {validationResult} = require('express-validator');
 const { json } = require('express');
+let db = require('../database/models')
 
 const  productoControllers = {
     producNew: (req,res)=>{
+        db.Productos.findAll()
+            .then(function (productos){
+                res.render('../views/producto/productNew', {'productos': productos})
+            })
+
+
         res.render(path.resolve('./views/producto/productNew'))
     },
     producDetalle: (req,res)=>{
@@ -16,7 +23,7 @@ const  productoControllers = {
         let productos = JSON.parse(productosJSON)
         let productoId = req.params.id
         productoId = productos.id 
-        
+
 
         res.render('../views/producto/productDetail', {'productos': productos})
     },

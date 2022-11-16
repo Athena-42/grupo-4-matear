@@ -42,15 +42,19 @@
                     
                     <label> Categoria
                             <br>
-                            <input type ="text" name = "catProduct" >
+                            <select name="categoria" >
+                                <% for( let i = 0; i < categorias.length; i++ ) { %>
+                                <option value="<%= categorias[i].id %> ">
+                                    <%= categorias[i].name> %>
+                                </option>
+                                <% } %>
+                            </select>
                     </label>
                     <br>
                     <label> Precio
                             <br>
                             <input type ="text" name = "precProduct" id ="precProduct"  >
-                            <% if (locals.errors && errors.precProduct) {%>
-                                <p class ="feedback"><%= errors.msg %></p>
-                            <%}%>
+                            
                     </label>
                 </div>
                 <div class ="Cont_buttons_New_Product">

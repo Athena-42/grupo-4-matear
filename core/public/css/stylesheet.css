@@ -5,8 +5,9 @@
 /* ----------------------------- */
 /* ---------- BODY ---------- */
 body{
-    background-image: url('/images/leather-brown-texture.jpg');
-    background-size: 1474px;
+    /*background-image: url('/images/leather-brown-texture.jpg');*/
+    /*background-size: 1474px;*/
+    background-color: #666;
     /*background-color: #5C4423;*/
     margin: 0px;
     padding: 0px;
@@ -294,7 +295,7 @@ a i{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: gainsboro;
+    background-color: rgba(220, 220, 220, 0.24);
     margin: 10px;
     width: 20%;
 }
@@ -316,7 +317,7 @@ a i{
     flex-direction: column;
     border: solid 2px transparent;
     border-radius: 15px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 80vw;
     height: 50vh;
     box-sizing: border-box;
@@ -997,7 +998,8 @@ Header{display: flex; flex-direction: column; width: 100%;}
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-image: url('/images/leather-brown-texture.jpg');
+    /*background-image: url('/images/leather-brown-texture.jpg');*/
+    background-color: #666;
     background-size: 1474px;
     padding-bottom: 15px;
 }

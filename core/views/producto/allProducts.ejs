@@ -18,6 +18,26 @@
     </div>
     
     <% for( let i = 0; i < productos.length; i++ ) { %>
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+        
+        <div class="col">
+          <div class="card ">
+            <img src="<%= productos[i].imagen %> " class="card-img-top img-fluid" width="100%" alt="Mate">
+            <div class="card-body">
+              <div class="truck"><i class="fas fa-shopping-cart"></i></div>
+              <h4 class="card-title"><%= productos[i].name %></h4>
+              <p class="card-text">$ <%= productos[i].precio %> </p>
+              <h2>40% OFF</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% } %>
+
+
+
+
+    <!-- <% for( let i = 0; i < productos.length; i++ ) { %>
         <div class="cont-articulos">
         <article class="articulos">
             <img class="imagen-producto" src="<%= productos[i].imagen %> " width="100%" alt="Mate">
@@ -27,7 +47,7 @@
             <h4 class="description"><%= productos[i].name %> </h4>
         </article>
     </div>    
-    <% } %>
+    <% } %> -->
 
     <div class ="Footer">
         <%- include ('../partials/footer') %>

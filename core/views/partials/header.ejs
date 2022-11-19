@@ -50,9 +50,13 @@
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
-              </li>
+              <button type="button" class="btn position-relative bg-warning text-dark">
+                <a href="/cart"><i class="fas fa-shopping-cart"></i></a>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger ">
+                  2
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -67,10 +71,8 @@
 
     <div class ="Header_Cont">
         
-            <div class="Header-Barra-Busqueda">
-                <input type="text" name="search" placeholder="Buscar producto" class="Header-Searchbar-Input" autocomplete="off">
-            </div>
-            <div class="Logo">
+            
+            <div class="Logo rounded mx-auto d-block">
             <a href="/"><img src="/images/logo-prueba.png" alt="Logo MateAr" ></a>
             </div>
             

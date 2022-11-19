@@ -79,12 +79,15 @@ a i{
     
     
 }
+.carrito-header{
+    background-color: rgb(255, 196, 0);
+}
 .iconos-header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     font-size: 3.5vw;
-    margin-right: 150px;
+    margin-right: 65px;
 }
 .insta{
     color: #E1306C;

@@ -71,7 +71,7 @@ a i{
 .Header_Cont{
     display: flex; 
     width: 100vw;
-    height: 15vw;
+    height: 10vw;
     flex-direction: row;
     justify-content: space-between; 
     background-image: url('/images/cuero-negro.jpg');
@@ -104,7 +104,7 @@ a i{
 .Logo img{
     width: 12vw;
     height: 12vw;
-    padding-top: 10px;
+    
     padding-bottom: 10px;
  
 }

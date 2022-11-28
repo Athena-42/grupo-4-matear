@@ -17,12 +17,12 @@
         <%- include ('../partials/header') %>
     </div>
     
-    <% for( let i = 0; i < productos.length; i++ ) { %>
+    
     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-        
+      <% for( let i = 0; i < productos.length; i++ ) { %>    
         <div class="col">
           <div class="card ">
-            <img src="<%= productos[i].imagen %> " class="card-img-top img-fluid" width="100%" alt="Mate">
+            <img src="<%= productos[i].imagen %> " class="card-img-top img-fluid" alt="Mate">
             <div class="card-body">
               <div class="truck"><i class="fas fa-shopping-cart"></i></div>
               <h4 class="card-title"><%= productos[i].name %></h4>
@@ -31,8 +31,9 @@
             </div>
           </div>
         </div>
+        <% } %>
       </div>
-      <% } %>
+      
 
 
 

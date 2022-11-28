@@ -71,7 +71,7 @@ a i{
 .Header_Cont{
     display: flex; 
     width: 100vw;
-    height: 10vw;
+    height: 12vw;
     flex-direction: row;
     justify-content: space-between; 
     background-image: url('/images/cuero-negro.jpg');
@@ -88,6 +88,7 @@ a i{
     flex-wrap: wrap;
     font-size: 3.5vw;
     margin-right: 65px;
+    
 }
 .insta{
     color: #E1306C;
@@ -169,7 +170,14 @@ a i{
     text-decoration: underline;
 }
 
+.fab fa-facebook facebu{
+    text-decoration: none;
+}
 
+
+.fab fa-instagram insta {
+    text-decoration: none;
+}
 
 
 /*register css*/

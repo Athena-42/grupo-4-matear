@@ -1,6 +1,33 @@
 1 logo de react en pestania
 2 tener dos node modules y packege
-3 
+3 notificacion ??? margin 
+4 git add y se agregan/crean node modules
+( create mode 100644 core/node_modules/sequelize/types/table-hints.d.ts
+ create mode 100644 core/node_modules/sequelize/types/transaction.d.ts
+ create mode 100644 core/node_modules/sequelize/types/utils.d.ts
+ create mode 100644 core/node_modules/sequelize/types/utils/class-to-invokable.d.ts
+ create mode 100644 core/node_modules/sequelize/types/utils/deprecations.d.ts
+ create mode 100644 core/node_modules/sequelize/types/utils/join-sql-fragments.d.ts
+ create mode 100644 core/node_modules/sequelize/types/utils/logger.d.ts
+ create mode 100644 core/node_modules/sequelize/types/utils/set-required.d.ts
+ create mode 100644 core/node_modules/sequelize/types/utils/sql.d.ts
+ create mode 100644 core/node_modules/sequelize/types/utils/validator-extras.d.ts
+ create mode 100644 core/node_modules/toposort-class/.eslintrc
+ create mode 100644 core/node_modules/toposort-class/.gitattributes
+ create mode 100644 core/node_modules/toposort-class/.npmignore)
+ 5  CategoriaId
+ parent: Error: Unknown column 'CategoriaId' in 'field list'
+   ...
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'CategoriaId' in 'field list'",
+    sql: 'SELECT `id`, `name`, `description`, `price`, `oferta`, `categorie_id`, `color_id`, `CategoriaId`, `ColorId` FROM `products` AS `Productos`;',
+    parameters: undefined
+6 fotos en el carrousel
+
+7 todos los Productos, como ubicarlos
+
 
 -------------------------
 

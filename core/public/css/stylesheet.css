@@ -5,10 +5,9 @@
 /* ----------------------------- */
 /* ---------- BODY ---------- */
 body{
-    /*background-image: url('/images/leather-brown-texture.jpg');*/
-    /*background-size: 1474px;*/
-    background-color: #666;
-    /*background-color: #5C4423;*/
+    background-image: url('/images/leather-brown-texture.jpg');
+    background-size: 1474px;
+    background-color: #2F3841;
     margin: 0px;
     padding: 0px;
 }

@@ -5,9 +5,9 @@
 /* ----------------------------- */
 /* ---------- BODY ---------- */
 body{
-    background-image: url('/images/leather-brown-texture.jpg');
-    background-size: 1474px;
     background-color: #2F3841;
+    background-size: 974px;
+    
     margin: 0px;
     padding: 0px;
 }
@@ -87,7 +87,14 @@ a i{
     flex-wrap: wrap;
     font-size: 3.5vw;
     margin-right: 65px;
+   
     
+}
+
+.iconos-header a{
+    text-decoration: none;
+  
+
 }
 .insta{
     color: #E1306C;
@@ -169,14 +176,7 @@ a i{
     text-decoration: underline;
 }
 
-.fab fa-facebook facebu{
-    text-decoration: none;
-}
 
-
-.fab fa-instagram insta {
-    text-decoration: none;
-}
 
 
 /*register css*/
@@ -282,6 +282,7 @@ a i{
 /* ---------- HOME ARTICULOS ---------- */
 
 .articulo-cont{
+   
     place-content: center;
     display: flex;
     flex-wrap: wrap;

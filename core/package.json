@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Athena-42/grupo-4-matear#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.2.3",
     "cookie-parser": "^1.4.6",
     "ejs": "^3.1.8",
     "express": "^4.18.1",

@@ -31,7 +31,7 @@
                 <div class ="Nomb_Desc_Product">
                     <label> Nombre del producto
                             <br>
-                            <input type ="text" name = "nomProduct" required>
+                            <input type ="text" name = "nombreProduct" required>
                     </label>
                     <br>
                     <label> Descripción 
@@ -44,11 +44,11 @@
                             <br>
                             <select name="categoria" >
                                 <% for( let i = 0; i < categorias.length; i++ ) { %>
-                                <option value="<%= categorias[i].id %> ">
+                                <option value= "<%= categorias[i].id %>">
                                     <%= categorias[i].name> %>
                                 </option>
                                 <% } %>
-                            </select>
+                            </select> 
                     </label>
                     <br>
                     <label> Precio

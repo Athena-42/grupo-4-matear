@@ -37,7 +37,7 @@ router.get('/', mainControllers.index);
 router.get('/products', mainControllers.todosProducts)
 router.get('/productdetail/:id', productoControllers.producDetalle);
 router.get('/products/new', productoControllers.producNew);
-router.post('/products/new', upload.single('imgProduct'),productoControllers.productProcessImg);
+router.post('/products/new',productoControllers.productSave);
 router.get('/products/edit', productoControllers.producEdit);
 
 //Registro
@@ -57,3 +57,11 @@ router.get('/detail', productoControllers.producDetalle);
 
 
 module.exports = router;
+
+/* <select name="categoria" >
+                                <% for( let i = 0; i < categorias.length; i++ ) { %>
+                                <option value="<%= categorias[i].id %> ">
+                                    <%= categorias[i].name> %>
+                                </option>
+                                <% } %>
+                            </select> */

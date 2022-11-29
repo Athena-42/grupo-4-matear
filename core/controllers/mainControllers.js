@@ -59,7 +59,7 @@ const mainControllers = {
         console.log(errores)
         if (!errores.isEmpty()){
             res.render(path.resolve('./views/usuario/login'),{mensajesDeError: errores.array()})
-            console.log('Ingrese por acá')
+            console.log('Ingrese por acá') 
             
         }else{
             res.render(path.resolve('./views/usuario/login'))

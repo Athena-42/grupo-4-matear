@@ -10,14 +10,21 @@ let db = require('../database/models')
 
 const  productoControllers = {
     producNew: (req,res)=>{
-        db.Productos.findAll()
-            .then(function (productos){
-                res.render('../views/producto/productNew', {'productos': productos})
+        db.Categorias.findAll()
+            .then(function (categorias){
+                res.render('../views/producto/productNew', {'categorias': categorias})
             })
-
-
-        res.render(path.resolve('./views/producto/productNew'))
     },
+    productSave: (req, res) =>{
+        db.Pelicula.create({
+            nombre: req.body.nombreProduct,
+            descripcion: req.body.descProduct,
+            categoria: req.body.categoria,
+            precio: req.body.precProduct
+        })
+        res.redirect('/products')
+    },
+
     producDetalle: (req,res)=>{
         let productosJSON = fs.readFileSync('./data/productsDataBase.json', {encoding: 'utf-8'});
         let productos = JSON.parse(productosJSON)

@@ -11,8 +11,8 @@ let db = require('../database/models')
 const  productoControllers = {
     producNew: (req,res)=>{
         db.Categorias.findAll()
-            .then(function (categorias){
-                res.render('../views/producto/productNew', {'categorias': categorias})
+            .then(function (categoria){
+                res.render('../views/producto/productNew', {'categoria': categoria})
             })
     },
     productSave: (req, res) =>{

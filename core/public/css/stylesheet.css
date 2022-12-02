@@ -291,12 +291,19 @@ a i{
     justify-content: space-around;
     flex-grow: 1;
     align-items: center;
-    margin: 0%;
   
 }
 .articulo-cont img{
-    width: 70%;
+    width: 50%;
     place-content: center;
+}
+
+.articulo-cont a{
+    text-decoration: none;
+}
+.articulo-text{
+    color:rgb(255, 255, 255);
+    align-self: center;
 }
 
 /* ---------- ARTICULOS PRODUCTOS ---------- */

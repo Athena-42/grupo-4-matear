@@ -309,20 +309,45 @@ a i{
 /* ---------- ARTICULOS PRODUCTOS ---------- */
 
 .cont-articulo-producto {
+   
     display: flex;
     flex-wrap: wrap;
+   margin-left: 0px;
+    height: 450px;
+    object-fit: fill;
+    justify-content: space-around;
+   
     
 }
 .card img{
-    width: 740%;
-   
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+    
 }
 
 .card {
-    width: 100%;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+.card-body{
+    height: 20%;
+    object-fit: fill;
+  
 }
 
-
+.card-text{
+ font-size: 20px;
+}
+.card-body h2{
+font-size: 20px;
+}
+.truck i{
+    color: black;
+}
 
 /* ---------- PRODUCT NEW ---------- */
 .Cont_Gral_Form_newProduct{

@@ -20,12 +20,11 @@
     
     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
       <% for( let i = 0; i < productos.length; i++ ) { %>    
-        <div class="col cont-articulo-producto">
+        <div class="cont-articulo-producto">
           <a href="/detail/:id"><div class="card ">
             <img src="<%= productos[i].imagen %> " class="card-img-top img-fluid" alt="Mate">
             <div class="card-body">
               <div class="truck"><i class="fas fa-shopping-cart"></i></div>
-              <h4 class="card-title"><%= productos[i].name %></h4>
               <p class="card-text">$ <%= productos[i].precio %> </p>
               <h2>40% OFF</h2>
             </div>

@@ -2,12 +2,12 @@ module.exports = function(sequelize, DataTypes) {
     let alias = 'Categorias'
 
     let cols = {
-        id: {
+        Id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
-        categorie: {
+        Categorie: {
             type: DataTypes.STRING
 
         }

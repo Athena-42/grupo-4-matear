@@ -11,8 +11,8 @@ let db = require('../database/models')
 const  productoControllers = {
     producNew: (req,res)=>{
         db.Categorias.findAll()
-            .then(function (categoria){
-                res.render('../views/producto/productNew', {'categoria': categoria})
+            .then(function (categorias){
+                res.render('producto/productNew', {categorias})
             })
     },
     productSave: (req, res) =>{
@@ -27,7 +27,7 @@ const  productoControllers = {
 
     producDetalle: (req,res)=>{
         let productosJSON = fs.readFileSync('./data/productsDataBase.json', {encoding: 'utf-8'});
-        let productos = JSON.parse(productosJSON)
+        let productos = JSON.parse(productosJSON) 
         let productoId = req.params.id
         productoId = productos.id 
 

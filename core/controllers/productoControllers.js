@@ -16,11 +16,11 @@ const  productoControllers = {
             })
     },
     productSave: (req, res) =>{
-        db.Pelicula.create({
-            nombre: req.body.nombreProduct,
-            descripcion: req.body.descProduct,
-            categoria: req.body.categoria,
-            precio: req.body.precProduct
+        db.Productos.create({
+            name: req.body.nombreProduct,
+            description: req.body.descProduct,
+            categorie_id: req.body.categoria,
+            price: req.body.precProduct
         })
         res.redirect('/products')
     },

@@ -53,46 +53,60 @@ const mainControllers = {
         res.render(path.resolve('./views/usuario/login'))
     },
     processLogin: (req,res)=>{
-        let errores = validationResult(req);
-        //console.log (errores)
-        let usuarios = JSON.parse(users)
-        console.log(errores)
-        if (!errores.isEmpty()){
-            res.render(path.resolve('./views/usuario/login'),{mensajesDeError: errores.array()})
-            console.log('Ingrese por acá') 
-            
-        }else{
-            res.render(path.resolve('./views/usuario/login'))
-            let usuExiste = usuarios.find(usuRegistrado => usuRegistrado.email == req.body.email)
-            
-            if (usuExiste != undefined)
-            {
-                let passUsu = usuExiste.password;
-                if ( bcrypt.compareSync(req.body.password,passUsu)){
-                    console.log('Success');
+        const resultValidation = validationResult(req);
 
-                }else{
-                    res.render(path.resolve('./views/usuario/login'));
-                }
-            }else{
-                //let advertencia = validationResult(req);
-                /*advertencia.errors.push( {credenciales: {
-                    value: '100',
-                    msg: 'Credenciales Invalidas',
-                    param: 'email',
-                    location: 'body'
-                  }});
-                  console.log(advertencia)*/
-
-                  let avisoCred = validationResult(req);
-                  avisoCred.errors.push( {
-                    value: '100',
-                    msg: 'Credenciales Invalidas',
-                    param: 'email',
-                    location: 'body'
-                  });
-                res.render(path.resolve('./views/usuario/login'),{avisoCred: avisoCred.array()})}
+        if(resultValidation.errors.length > 0){
+            return res.render('usuario/login', {
+                errors: resultValidation.mapped(),
+                oldData: req.body
+            })
         }
+
+
+
+
+        // let errores = validationResult(req);
+        // //console.log (errores)
+        // let usuarios = JSON.parse(users)
+        // console.log(errores)
+        // if (!errores.isEmpty()){
+        //     res.render(path.resolve('./views/usuario/login'),{mensajesDeError: errores.array()})
+        //     console.log('Ingrese por acá') 
+            
+        // }else{
+        //     res.render(path.resolve('./views/usuario/login'))
+        //     let usuExiste = usuarios.find(usuRegistrado => usuRegistrado.email == req.body.email)
+            
+        //     if (usuExiste != undefined)
+        //     {
+        //         let passUsu = usuExiste.password;
+        //         if ( bcrypt.compareSync(req.body.password,passUsu)){
+        //             console.log('Success');
+
+        //         }else{
+        //             res.render(path.resolve('./views/usuario/login'));
+        //         }
+        //     }else{
+
+                
+        //         //let advertencia = validationResult(req);
+        //         /*advertencia.errors.push( {credenciales: {
+        //             value: '100',
+        //             msg: 'Credenciales Invalidas',
+        //             param: 'email',
+        //             location: 'body'
+        //           }});
+        //           console.log(advertencia)*/
+
+        //           let avisoCred = validationResult(req);
+        //           avisoCred.errors.push( {
+        //             value: '100',
+        //             msg: 'Credenciales Invalidas',
+        //             param: 'email',
+        //             location: 'body'
+        //           });
+        //         res.render(path.resolve('./views/usuario/login'),{avisoCred: avisoCred.array()})}
+        // }
         //res.send('Succes!');
         
         //res.render(path.resolve('./views/usuario/login'))

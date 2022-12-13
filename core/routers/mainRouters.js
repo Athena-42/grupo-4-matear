@@ -37,7 +37,7 @@ router.get('/', mainControllers.index);
 router.get('/products', mainControllers.todosProducts)
 router.get('/productdetail/:id', productoControllers.producDetalle);
 router.get('/products/new', productoControllers.producNew);
-router.post('/products/new', upload.single('imagen_product'),productoControllers.productSave);
+router.post('/products/new',validations, upload.single('imagen_product'),productoControllers.productSave);
 router.get('/products/edit', productoControllers.producEdit);
 
 //Registro
@@ -46,7 +46,7 @@ router.post('/register',validations, mainControllers.processRegister);
 
 //Login
 router.get('/login', mainControllers.login);
-router.post('/login',validations,mainControllers.processLogin);
+router.post('/login',validations, mainControllers.processLogin);
 
 router.get('/cart', productoControllers.productCart);
 router.get('/detail', productoControllers.producDetalle);

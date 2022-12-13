@@ -19,19 +19,19 @@
     
     
     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-      <% for( let i = 0; i < productos.length; i++ ) { %>    
+      <% productos.forEach(producto => { %>    
         <div class="cont-articulo-producto">
           <a href="/detail/:id"><div class="card ">
-            <img src="<%= productos[i].imagen %> " class="card-img-top img-fluid" alt="Mate">
+            <img src="<%= producto.imagen %> " class="card-img-top img-fluid" alt="Mate">
             <div class="card-body">
               <div class="truck"><i class="fas fa-shopping-cart"></i></div>
-              <p class="card-text">$ <%= productos[i].precio %> </p>
-              <h2>40% OFF</h2>
+              <p class="card-text">$ <%= producto.price %> </p>
+              <h2><%= producto.oferta %></h2>
             </div>
           </div>
         </a>
         </div>
-        <% } %>
+        <% }) %>
       </div>
       
 

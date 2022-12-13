@@ -6,16 +6,25 @@ const users = fs.readFileSync(path.join(__dirname,'../data/userDataBase.json'));
 const bcrypt = require('bcryptjs')
 const {validationResult} = require('express-validator');
 const { json } = require('express');
+let db = require('../database/models')
+
+
+
 const mainControllers = {
     index: (req,res)=>{
         
         res.render('../views/usuario/home')
     },
     todosProducts: (req, res) =>{
-        let productosJSON = fs.readFileSync('./data/productsDataBase.json', {encoding: 'utf-8'});
-        let productos = JSON.parse(productosJSON)
+        // let productosJSON = fs.readFileSync('./data/productsDataBase.json', {encoding: 'utf-8'});
+        // let productos = JSON.parse(productosJSON)
 
-        res.render('../views/producto/allProducts', {'productos': productos})
+        // res.render('../views/producto/allProducts', {'productos': productos})
+        db.Productos.findAll()
+            .then(function (productos){
+                res.render('producto/allProducts', {productos})
+            })
+
     },
     registrar: (req,res)=>{
         res.render(path.resolve('./views/usuario/registro'))

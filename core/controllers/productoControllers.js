@@ -22,7 +22,7 @@ const  productoControllers = {
             categorie_id: req.body.categoria,
             price: req.body.precProduct,
             oferta: req.body.ofertProduct,
-            imagen: req.file?req.file.filename:foto_default.jpg
+            imagen: req.file?req.file.filename:product_default.jpg
         })
         res.redirect('/products')
     },

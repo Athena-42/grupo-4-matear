@@ -238,11 +238,15 @@ a i{
     margin: auto;
     padding: 0px;
     width: 45vw;
-    height: 50vh;    
+    height: 53vh;    
     border: solid 2px;
     border-color: black;
     border-radius: 20px;
     background-color: white;
+}
+.register-form{
+    width: 100%;
+
 }
 
 .Register-Form-Campos .Datos-Input-Grupo-Registro input{
@@ -352,7 +356,7 @@ font-size: 20px;
 /* ---------- PRODUCT NEW ---------- */
 .Cont_Gral_Form_newProduct{
     display: flex;
-    flex-direction: row;
+    
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 40px;
@@ -361,12 +365,12 @@ font-size: 20px;
 .Cont_Form_newProduct {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    
     border: solid 2px transparent;
     border-radius: 15px;
     background-color: rgb(255, 255, 255);
     width: 80vw;
-    height: 50vh;
+    
     box-sizing: border-box;
     padding: 15px;
 

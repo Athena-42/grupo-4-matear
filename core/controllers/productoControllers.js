@@ -16,15 +16,7 @@ const  productoControllers = {
             })
     },
     productSave: (req, res) =>{
-            const resultValidation = validationResult(req);
-    
-            if(resultValidation.errors.length > 0){
-                return res.render('producto/productNew', {
-                    errors: resultValidation.mapped(),
-                    oldData: req.body
-                })
-            }else {
-        db.Productos.create({
+           db.Productos.create({
             name: req.body.nombreProduct,
             description: req.body.descProduct,
             categorie_id: req.body.categoria,
@@ -32,7 +24,7 @@ const  productoControllers = {
             oferta: req.body.ofertProduct,
             imagen: req.file?req.file.filename:foto_default.jpg
         })
-    }
+    
         res.redirect('/products')
         
     },

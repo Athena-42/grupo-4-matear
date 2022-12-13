@@ -21,7 +21,7 @@ const  productoControllers = {
             description: req.body.descProduct,
             categorie_id: req.body.categoria,
             price: req.body.precProduct,
-            imagen: req.body.imagen_product
+            imagen: req.file?req.file.filename:foto_default.jpg
         })
         res.redirect('/products')
     },

@@ -31,18 +31,18 @@
 
                 <div class ="Nomb_Desc_Product">
                     <label> Nombre del producto
-                            <br>
+                            
                             <input type ="text" name = "nombreProduct" required>
                     </label>
-                    <br>
+                    
                     <label> Descripción 
-                            <br>
+                            
                             <input type ="text" name = "descProduct" >
                     </label>
-                    <br>
+                    
                     
                     <label> Categoria
-                            <br>
+                            
                             <select name="categoria" >
                                 <% categorias.forEach(categoria => { %>
                                     <option value= "<%=categoria.Id%>">
@@ -53,10 +53,16 @@
                                     
                                 </select> 
                     </label>
-                    <br>
+                    
                     <label> Precio
-                            <br>
+                            
                             <input type ="text" name = "precProduct" id ="precProduct"  >
+                            
+                    </label>
+                    
+                    <label> Oferta (opcional)
+                            
+                            <input type ="text" name = "ofertProduct" id ="ofertProduct"  >
                             
                     </label>
                 </div>

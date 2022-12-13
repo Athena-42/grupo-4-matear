@@ -24,6 +24,9 @@ module.exports = function (sequelize, DataTypes) {
         },
         color_id: {
             type: DataTypes.INTEGER
+        },
+        imagen: {
+            type: DataTypes.STRING
         }
     }
     let config = {
@@ -40,6 +43,10 @@ module.exports = function (sequelize, DataTypes) {
         Productos.belongsTo(models.Color, {
             as: 'color',
             foreignKey: 'color_id'
+        })
+        Productos.belongsTo(models.Imagen, {
+            as: 'imagenes',
+            foreignKey: 'product_id'
         })
     }
     return Productos;

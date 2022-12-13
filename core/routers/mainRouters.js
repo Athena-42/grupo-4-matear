@@ -22,7 +22,7 @@ const validations = require('../middlewares/validateRegisterMiddleware');
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb){
-        cb(null,'./public/images/avatars')
+        cb(null,'./public/images/productos')
     },
     filename: function (req, file, cb){
         let fileName = `${Date.now()}_img${path.extname(file.originalname)}`;
@@ -37,7 +37,7 @@ router.get('/', mainControllers.index);
 router.get('/products', mainControllers.todosProducts)
 router.get('/productdetail/:id', productoControllers.producDetalle);
 router.get('/products/new', productoControllers.producNew);
-router.post('/products/new',productoControllers.productSave);
+router.post('/products/new', upload.single('imagen_product'),productoControllers.productSave);
 router.get('/products/edit', productoControllers.producEdit);
 
 //Registro

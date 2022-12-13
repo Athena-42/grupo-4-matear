@@ -20,7 +20,8 @@ const  productoControllers = {
             name: req.body.nombreProduct,
             description: req.body.descProduct,
             categorie_id: req.body.categoria,
-            price: req.body.precProduct
+            price: req.body.precProduct,
+            imagen: req.body.imagen_product
         })
         res.redirect('/products')
     },

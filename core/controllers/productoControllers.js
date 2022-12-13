@@ -16,7 +16,7 @@ const  productoControllers = {
             })
     },
     productSave: (req, res) =>{
-        db.Productos.create({
+           db.Productos.create({
             name: req.body.nombreProduct,
             description: req.body.descProduct,
             categorie_id: req.body.categoria,
@@ -24,7 +24,9 @@ const  productoControllers = {
             oferta: req.body.ofertProduct,
             imagen: req.file?req.file.filename:product_default.jpg
         })
+    
         res.redirect('/products')
+        
     },
 
     producDetalle: (req,res)=>{

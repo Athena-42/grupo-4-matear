@@ -46,7 +46,7 @@ router.post('/register',validations, mainControllers.processRegister);
 
 //Login
 router.get('/login', mainControllers.login);
-router.post('/login',validations,mainControllers.processLogin);
+router.post('/login',validations, mainControllers.processLogin);
 
 router.get('/cart', productoControllers.productCart);
 router.get('/detail', productoControllers.producDetalle);

@@ -16,6 +16,8 @@
     </div>
 
     <div class="Login-Main">
+
+   
         <main class ="Login-Main-Cont">
             <div class ="Login-cont-Form">
                 <form class ="Login-Form" action ="/login" method ="POST">
@@ -23,12 +25,22 @@
                         
                         
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <input type="email" name="email" class="form-control <%= locals.email ? 'is-invalid' : null %>" id="floatingInput" placeholder="name@example.com" value="<%= locals.oldData ? oldData.email : null %>">
                             <label for="floatingInput">Email address</label>
+                            <% if (locals.errors && errors.email) { %>
+                                <div class="text-danger">
+                                 <%= errors.email.msg %> 
+                                </div>
+                            <% } %>
                           </div>
                           <div class="form-floating">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
                             <label for="floatingPassword">Password</label>
+                            <% if (locals.errors && errors.password) { %>
+                                <div class="text-danger">
+                                 <%= errors.password.msg %> 
+                                </div>
+                            <% } %>
                           </div>
                             
                          

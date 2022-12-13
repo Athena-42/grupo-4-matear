@@ -25,11 +25,21 @@
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1"><i class="fab fa-product-hunt"></i></span>
                 <input type="text" name = "nombreProduct" class="form-control" placeholder="Nombre del producto" aria-label="Username" aria-describedby="basic-addon1">
-              </div>
+                <% if (locals.errors && errors.nombreProduct) { %>
+                    <div class="text-danger">
+                     <%= errors.nombreProduct.msg %> 
+                    </div>
+                <% } %>
+            </div>
               
               <div class="input-group mb-3">
                 <input type="text" name = "descProduct" class="form-control" placeholder="Descripción del producto" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <span class="input-group-text" id="basic-addon2">Descripción</span>
+                <% if (locals.errors && errors.descProduct) { %>
+                    <div class="text-danger">
+                     <%= errors.descProduct.msg %> 
+                    </div>
+                <% } %>
               </div>
               
               <div class="input-group mb-3">
@@ -42,12 +52,22 @@
                 </option>
                 <% }) %>
                 </select>
+                <% if (locals.errors && errors.categoria) { %>
+                    <div class="text-danger">
+                     <%= errors.categoria.msg %> 
+                    </div>
+                <% } %>
               </div>
               
               <div class="input-group mb-3">
                 <span class="input-group-text">$</span>
                 <input type="text" name = "precProduct" id ="precProduct" class="form-control" aria-label="Amount (to the nearest dollar)">
                 <span class="input-group-text">.00</span>
+                <% if (locals.errors && errors.precProduct) { %>
+                    <div class="text-danger">
+                     <%= errors.precProduct.msg %> 
+                    </div>
+                <% } %>
               </div>
               
               <div class="input-group mb-3">
